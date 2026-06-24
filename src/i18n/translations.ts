@@ -23,25 +23,25 @@ export const translations = {
     },
     about: {
       title: "关于 Pozos Azules",
-      p1: "Pozos Azules（蓝色深潭）坐落于哥伦比亚博亚卡省比利亚德莱瓦郊外，是一处由自然侵蚀形成的石灰岩峡谷与碧潭群。数百万年的水流冲刷，在岩壁上雕琢出层层叠叠的天然泳池，水色因矿物质折射呈现出令人惊叹的蓝绿色调。",
-      p2: "这里远离城市喧嚣，四周环绕着安第斯山脉的干旱丛林景观。清澈见底的池水、形态各异的岩层与天空的蔚蓝交相辉映，构成了一幅超现实的天然画卷。无论是摄影爱好者还是自然探索者，都能在此找到属于自己的宁静时刻。",
+      p1: "Pozos Azules（蓝色深潭）坐落于哥伦比亚著名的遗产小镇莱瓦镇郊外，是一项旨在支持该地区旅游业发展、兼具生态保护与观赏价值的私人倡议项目。在广袤的半干旱丛林与黄沙交织的安第斯地貌中，占地约 60 公顷的园区内分布着 7 座色彩极度饱和的蓝绿色深潭。",
+      p2: "这种强烈的'荒漠绿洲'视觉反差，使其成为了不仅适合漫步探索，更是摄影与地质爱好者的绝佳取景地。远离城市喧嚣，这里展现出自然与人工交织的独特色彩奇观。",
       highlights: {
         title: "亮点",
         items: [
-          "天然石灰岩碧潭群",
-          "清澈蓝绿色矿泉水",
-          "安第斯干旱丛林景观",
+          "60 公顷自然与人工交织的色彩奇观",
+          "7 座蓝绿色深潭",
+          "半干旱安第斯地貌",
           "绝佳的摄影取景地",
-          "适合徒步与探险",
+          "日间色彩游与夜间观星",
         ],
       },
       management: {
         title: "景点管理",
-        content: "Pozos Azules 景点目前由比利亚德莱瓦镇政府与当地社区共同管理。门票收入主要用于维护周边生态环境、改善游客设施（如步道、观景台、卫生间等）以及支持社区发展项目。作为一个重要的自然遗产，景点管理方致力于在保护自然环境的同时，为游客提供安全、优质的游览体验。",
+        content: "Pozos Azules 是一项私人倡议项目，旨在支持该地区旅游业发展。门票收入主要用于维护周边生态环境、改善游客设施（如步道、观景台、卫生间等）以及支持社区发展项目。管理方致力于在保护自然环境的同时，为游客提供安全、优质的游览体验。",
       },
     },
     visiting: {
-      title: "游览信息",
+      title: "游览体验",
       hours: {
         title: "开放时间",
         content: "每日开放",
@@ -49,48 +49,48 @@ export const translations = {
       },
       price: {
         title: "门票",
-        content: "约 10,000 - 15,000 COP",
-        note: "价格可能随季节调整",
+        content: "20,000 COP / 人（约合5美元）",
+        note: "大型旅游团队需提前预订才可享受折扣",
       },
       duration: {
         title: "建议游览时长",
-        content: "2 - 3 小时",
-        note: "含徒步与拍照时间",
+        content: "1.5 - 3 小时",
+        note: "含徒步、骑马或摄影时间",
       },
-      getThere: {
-        title: "如何到达",
-        content: "从比利亚德莱瓦镇中心出发",
-        note: "可乘出租车或参加当地旅行团，车程约 15-20 分钟",
+      experience: {
+        title: "游览体验",
+        content: "日间色彩游、夜间观星行、社交与活动",
+        note: "日间适合欣赏蓝绿色，夜间适合观星",
       },
       bring: {
         title: "建议携带",
-        items: ["防晒用品", "舒适的步行鞋", "充足的饮用水", "相机/防水手机套", "现金（小额门票与零食）"],
+        items: ["高倍数防晒霜", "遮阳帽", "舒适的防滑步行鞋", "充足的饮用水", "相机", "现金（门票与零食）"],
       },
     },
     transportation: {
-      title: "交通方式",
+      title: "交通指南",
       fromAirport: {
-        title: "从机场出发",
-        content: "从埃尔多拉多国际机场（波哥大）或其他附近机场到达后，建议先前往比利亚德莱瓦镇。可乘坐长途巴士或租车自驾，车程约3-4小时。",
+        title: "第一段：从机场到小镇",
+        content: "降落于哥伦比亚首都波哥大埃尔多拉多国际机场 (BOG) 后，需先前往波哥大长途巴士站（Terminal de Transporte）。乘坐前往莱瓦镇 (Villa de Leyva) 的大巴，车程约 3 - 4 小时。",
       },
       selfDrive: {
-        title: "自驾前往",
-        content: "从波哥大出发，沿5号国道行驶至查帕拉尔，然后转往比利亚德莱瓦。景点距离镇中心约3公里，有停车场。注意部分路段为山路，建议驾驶SUV车型。",
+        title: "第二段：从小镇到景点",
+        content: "景点距离镇中心非常近。自驾或出租车：走莱瓦镇至圣索菲亚 (Santa Sofía) 的公路，在行驶至 2公里处 的标识转弯即可到达；或者沿化石路 (Ruta de los Fósiles) 行驶约 3 公里。",
       },
       publicTransport: {
-        title: "公共交通",
-        content: "从波哥大盐公园长途巴士站乘坐前往比利亚德莱瓦的巴士，车程约3小时。到达镇上后可乘坐出租车或参加当地旅行团前往景点，车程约15-20分钟。",
+        title: "特色交通方式",
+        content: "强烈推荐在镇上租用 ATV（全地形车）或骑马穿越荒漠前往，这是当地最经典、体验感最强的抵达方式。也可以乘坐出租车，车程约 10-15 分钟。",
       },
       otherWays: {
-        title: "其他方式",
-        content: "可选择骑马、租ATV（全地形车）或骑山地自行车从镇上前往景点，体验感更佳。部分酒店提供 shuttle 服务，建议提前咨询。",
+        title: "其他建议",
+        content: "部分酒店提供 shuttle 服务，建议提前咨询。也可以选择骑山地自行车从镇上前往景点，体验感更佳。",
       },
     },
     history: {
       title: "历史与科普",
-      p1: "Pozos Azules（蓝色深潭）的形成可追溯至约30年前（20世纪70年代）。最初，当地农场主为了收集雨水灌溉农田，在这些石灰岩地面上人工挖掘了这些深坑。",
-      p2: "没想到随着时间推移，地下富含矿物质的泉水不断渗出并与雨水混合，加上土壤中高浓度的硫、硒和硫酸铜等矿物质，在阳光照射下形成了令人惊叹的蓝绿色调。这使得这些原本为农业用途的水池，意外成为了今天的自然奇观。",
-      p3: "景点目前由当地政府与社区共同管理，门票收入用于维护周边环境和改善游客设施。这里不仅是自然奇观，也是研究矿物质水体颜色和地质侵蚀的活标本。",
+      p1: "许多游客惊叹于这里的自然之美，但 Pozos Azules 实际上是人工开凿与地质化学反应共同创造的奇迹。首座深坑（最初作为农业蓄水沟渠）建于近 30 年前。直到 20 世纪末，当地陆续建成了 7 座深坑。",
+      p2: "这些水池并不是立刻变蓝的。雨水流经周边沟壑时，溶解了土壤中富含的硒、硫、硫酸铜等高浓度矿物质。富矿水汇聚在坑中，在阳光的折射下，每座深潭大约需要历经 5 年的时间，才能逐渐沉淀、演化成如今令人惊叹的亮蓝色或蓝绿色。",
+      p3: "随着莱瓦镇旅游业的繁荣，2000 年，这片已经完成'色彩蜕变'的奇观正式向公众开放，迅速成为当地最受瞩目的生态地标。",
     },
     location: {
       title: "位置与交通",
@@ -104,13 +104,13 @@ export const translations = {
       phoneNote: "建议提前致电确认开放情况",
     },
     tips: {
-      title: "旅行贴士",
+      title: "实用信息与安全贴士",
       items: [
-        "旱季（12月-3月、7月-8月）是最佳游览时节，水位较低，潭水颜色最为清澈。",
-        "周末和节假日游客较多，工作日前往可享受更清静的体验。",
-        "潭水较凉，适合泡脚降温，但游泳空间有限。",
-        "岩壁湿滑，请穿防滑鞋并注意安全，切勿攀爬危险区域。",
-        "附近没有餐厅，建议在比利亚德莱瓦镇用餐后再前往。",
+        "⚠️ 绝对禁止下水：尽管潭水色彩诱人，但由于水中硫、硒等矿物质浓度极高，对人体皮肤具有毒害和强刺激作用，严禁游泳或触碰潭水。",
+        "旱季（12月-3月、7月-8月）是最佳游览时节，水位稳定，色彩最纯粹。建议晴天上午前往，光线反应最佳。",
+        "雨后水质可能会短暂混入泥土变色，建议选择晴天前往。",
+        "荒漠地带日照强烈，请务必准备高倍数防晒霜、遮阳帽、舒适的防滑步行鞋，并自带充足的饮用水。",
+        "附近没有餐厅，建议在比利亚德莱瓦镇用餐后再前往。周末和节假日游客较多，工作日前往可享受更清静的体验。",
       ],
     },
     gallery: {
@@ -166,16 +166,16 @@ export const translations = {
   en: {
     nav: {
       about: "About",
-      visiting: "Visiting",
+      visiting: "Experience",
       transportation: "Transportation",
-      history: "History",
+      history: "History & Science",
       location: "Location",
       tips: "Tips",
     },
     hero: {
-      tagline: "Boyacá's Hidden Blue Paradise",
+      tagline: "Colombia's Desert Emerald · 60-Hectare Natural & Artificial Color Wonder",
       title: "Pozos Azules",
-      subtitle: "Emerald Pools · Natural Wonder",
+      subtitle: "Blue-Green Pools · Color Magic",
       cta: "Plan Your Visit",
     },
     rating: {
@@ -185,25 +185,25 @@ export const translations = {
     },
     about: {
       title: "About Pozos Azules",
-      p1: "Pozos Azules (Blue Pools) is a stunning natural attraction located just outside Villa de Leyva in Colombia's Boyacá department. Formed over millions of years by water erosion through limestone, this canyon features a series of natural pools carved into the rock, with water colors ranging from turquoise to deep azure due to mineral reflections.",
-      p2: "Surrounded by the arid Andean scrub landscape, the crystal-clear pools contrast dramatically with the weathered rock formations and vast blue sky. It's a surreal, otherworldly place that captivates photographers, nature lovers, and adventurers alike — a true geological treasure hidden in the Colombian highlands.",
+      p1: "Pozos Azules (Blue Pools) is located just outside Villa de Leyva, a famous heritage town in Colombia. It is a private initiative project aimed at supporting tourism development in the region, combining ecological protection with viewing value. Within the vast 60-hectare park, set against the semi-arid jungle and yellow sand interwoven Andean landscape, there are 7 intensely saturated blue-green deep pools.",
+      p2: "This strong visual contrast of 'desert oasis' makes it not only suitable for walking exploration, but also an excellent shooting location for photographers and geology enthusiasts. Away from the city noise, it showcases a unique color wonder where nature and artificiality intertwine.",
       highlights: {
         title: "Highlights",
         items: [
-          "Natural limestone pool cascades",
-          "Crystal-clear turquoise mineral waters",
-          "Andean dry forest landscape",
-          "Exceptional photography spots",
-          "Hiking and exploration trails",
+          "60-hectare natural & artificial color wonder",
+          "7 blue-green deep pools",
+          "Semi-arid Andean landscape",
+          "Excellent photography location",
+          "Daytime color tour & night stargazing",
         ],
       },
       management: {
         title: "Management",
-        content: "Pozos Azules is currently managed by the Villa de Leyva municipal government in cooperation with the local community. Entrance fees are mainly used to maintain the surrounding ecological environment, improve visitor facilities (such as trails, viewing platforms, restrooms, etc.), and support community development projects. As an important natural heritage site, the management is committed to protecting the natural environment while providing visitors with a safe and high-quality experience."
+        content: "Pozos Azules is a private initiative project aimed at supporting tourism development in the region. Entrance fees are mainly used to maintain the surrounding ecological environment, improve visitor facilities (such as trails, viewing platforms, restrooms, etc.), and support community development projects. The management is committed to protecting the natural environment while providing visitors with a safe and high-quality experience."
       },
     },
     visiting: {
-      title: "Visitor Information",
+      title: "Visiting Experience",
       hours: {
         title: "Opening Hours",
         content: "Open Daily",
@@ -211,48 +211,48 @@ export const translations = {
       },
       price: {
         title: "Admission",
-        content: "Approx. 10,000 - 15,000 COP",
-        note: "Prices may vary by season",
+        content: "20,000 COP / person (approx. $5 USD)",
+        note: "Large tour groups need advance booking for discounts",
       },
       duration: {
         title: "Suggested Duration",
-        content: "2 - 3 Hours",
-        note: "Including hiking and photo time",
+        content: "1.5 - 3 Hours",
+        note: "Including hiking, horseback riding or photo time",
       },
-      getThere: {
-        title: "Getting There",
-        content: "From Villa de Leyva town center",
-        note: "By taxi or local tour, approximately 15-20 min drive",
+      experience: {
+        title: "Experience Options",
+        content: "Daytime color tour, night stargazing, social & events",
+        note: "Daytime for best blue-green colors, nighttime for stargazing",
       },
       bring: {
         title: "What to Bring",
-        items: ["Sunscreen & hat", "Comfortable walking shoes", "Plenty of drinking water", "Camera / waterproof phone case", "Cash (small bills for entry & snacks)"],
+        items: ["High-SPF sunscreen", "Sun hat", "Comfortable non-slip walking shoes", "Plenty of drinking water", "Camera", "Cash (for entry & snacks)"],
       },
     },
     transportation: {
-      title: "Transportation",
+      title: "Transportation Guide",
       fromAirport: {
-        title: "From the Airport",
-        content: "After arriving at El Dorado International Airport (Bogotá) or other nearby airports, it is recommended to go to Villa de Leyva first. You can take a long-distance bus or rent a car for a drive of about 3-4 hours.",
+        title: "Phase 1: From Airport to Town",
+        content: "After landing at El Dorado International Airport (BOG) in Bogotá, the capital of Colombia, you need to go to the Bogotá Long-Distance Bus Terminal (Terminal de Transporte). Take a bus to Villa de Leyva, about 3-4 hours drive.",
       },
       selfDrive: {
-        title: "Self-Drive",
-        content: "Depart from Bogotá, drive along National Highway 5 to Chapalral, then turn to Villa de Leyva. The attraction is about 3 km from the town center and has parking. Note that some road sections are mountain roads, so it is recommended to drive an SUV.",
+        title: "Phase 2: From Town to Attraction",
+        content: "The attraction is very close to the town center. By car or taxi: Take the road from Villa de Leyva to Santa Sofía, turn at the sign at the 2-kilometer mark; or drive along the Fossil Road (Ruta de los Fósiles) for about 3 kilometers.",
       },
       publicTransport: {
-        title: "Public Transport",
-        content: "Take a bus from Bogotá Salt Park Long Distance Bus Station to Villa de Leyva, about 3 hours. After arriving in town, you can take a taxi or join a local tour to the attraction, about 15-20 minutes drive.",
+        title: "Special Transportation",
+        content: "It is highly recommended to rent an ATV (all-terrain vehicle) or ride a horse through the desert to get there. This is the most classic and experience-rich way to arrive locally. You can also take a taxi, about 10-15 minutes drive.",
       },
       otherWays: {
-        title: "Other Ways",
-        content: "You can choose to ride a horse, rent an ATV (all-terrain vehicle) or ride a mountain bike from the town to the attraction for a better experience. Some hotels provide shuttle service, it is recommended to consult in advance.",
+        title: "Other Suggestions",
+        content: "Some hotels provide shuttle service, it is recommended to consult in advance. You can also choose to ride a mountain bike from the town to the attraction for a better experience.",
       },
     },
     history: {
       title: "History & Science",
-      p1: "The formation of Pozos Azules (Blue Pools) can be traced back to about 30 years ago (1970s). Initially, local farmers manually dug these deep pits in the limestone ground to collect rainwater for irrigation.",
-      p2: "Unexpectedly, over time, underground mineral-rich spring water continued to seep out and mix with rainwater. Combined with high concentrations of minerals such as sulfur, selenium and copper sulfate in the soil, it formed an amazing blue-green color under sunlight. This made these pools, originally for agricultural use, unexpectedly become a natural wonder today.",
-      p3: "The site is currently managed by the local government and community. Entrance fees are used to maintain the surrounding environment and improve visitor facilities. It is not only a natural wonder, but also a living specimen for studying mineral water color and geological erosion.",
+      p1: "Many visitors marvel at the natural beauty here, but Pozos Azules is actually a miracle created by artificial excavation and geochemical reactions. The first pit (originally as an agricultural water storage ditch) was built nearly 30 years ago. Until the late 20th century, 7 pits were built in the area.",
+      p2: "These pools did not turn blue immediately. When rainwater flows through the surrounding gullies, it dissolves high concentrations of minerals such as selenium, sulfur, and copper sulfate rich in the soil. The mineral-rich water converges in the pits, and under the refraction of sunlight, each deep pool takes about 5 years to gradually settle and evolve into the amazing bright blue or blue-green color today.",
+      p3: "With the prosperity of Villa de Leyva's tourism industry, in 2000, this wonder that had completed its 'color transformation' was officially opened to the public, quickly becoming the most eye-catching ecological landmark in the area.",
     },
     location: {
       title: "Location & Directions",
@@ -266,13 +266,13 @@ export const translations = {
       phoneNote: "Call ahead to confirm availability",
     },
     tips: {
-      title: "Travel Tips",
+      title: "Practical Info & Safety Tips",
       items: [
-        "The dry season (Dec-Mar, Jul-Aug) offers the best experience — lower water levels reveal the most vivid blue-green colors.",
-        "Weekdays are much less crowded than weekends and holidays for a more peaceful visit.",
-        "The pool water is cool and refreshing for dipping feet, but swimming space is limited.",
-        "Rock surfaces are slippery — wear grip-soled shoes and stay on safe paths at all times.",
-        "No restaurants on site — eat in Villa de Leyva before heading out.",
+        "⚠️ ABSOLUTELY NO SWIMMING: Although the pool water looks tempting, due to the extremely high concentration of minerals such as sulfur and selenium in the water, which are toxic and strongly irritating to human skin, swimming or touching the pool water is strictly prohibited.",
+        "The dry season (Dec-Mar, Jul-Aug) offers the best experience — stable water levels and purest colors. It is recommended to go on sunny mornings for the best light reaction.",
+        "After rain, the water quality may temporarily mix with mud and change color, so it is recommended to choose sunny days to go.",
+        "The desert area has strong sunlight, please be sure to prepare high-SPF sunscreen, sun hat, comfortable non-slip walking shoes, and bring plenty of drinking water.",
+        "No restaurants on site — eat in Villa de Leyva before heading out. Weekdays are much less crowded than weekends and holidays for a more peaceful visit.",
       ],
     },
     gallery: {
@@ -328,16 +328,16 @@ export const translations = {
   es: {
     nav: {
       about: "Acerca de",
-      visiting: "Visita",
+      visiting: "Experiencia",
       transportation: "Transporte",
-      history: "Historia",
+      history: "Historia y Ciencia",
       location: "Ubicación",
       tips: "Consejos",
     },
     hero: {
-      tagline: "El Paraíso Azul Oculto de Boyacá",
+      tagline: "Esmeralda del Desierto de Colombia · 60 Hectáreas de Maravilla de Color Natural y Artificial",
       title: "Pozos Azules",
-      subtitle: "Piscinas Esmeralda · Maravilla Natural",
+      subtitle: "Piscinas Azul-Verde · Magia de Color",
       cta: "Planifica tu Visita",
     },
     rating: {
@@ -347,25 +347,25 @@ export const translations = {
     },
     about: {
       title: "Acerca de Pozos Azules",
-      p1: "Pozos Azules es un impresionante atractivo natural ubicado a las afueras de Villa de Leyva, en el departamento de Boyacá, Colombia. Formado durante millones de años por la erosión del agua en la piedra caliza, este cañón presenta una serie de piscinas naturales talladas en la roca, con colores que van del turquesa al azul profundo gracias a los reflejos minerales.",
-      p2: "Rodeado por el paisaje árido de matorral andino, las piscinas cristalinas contrastan dramáticamente con las formaciones rocosas erosionadas y el vasto cielo azul. Es un lugar surrealista que cautiva a fotógrafos, amantes de la naturaleza y aventureros por igual — un verdadero tesoro geológico escondido en las tierras altas colombianas.",
+      p1: "Pozos Azules (Piscinas Azules) se encuentra a las afueras de Villa de Leyva, un famoso pueblo patrimonial de Colombia. Es un proyecto de iniciativa privada destinado a apoyar el desarrollo turístico en la región, combinando protección ecológica con valor de observación. Dentro del vasto parque de 60 hectáreas, ambientado en el paisaje andino de matorral semiárido y arena amarilla entrelazada, hay 7 pozas profundas de color azul-verde intensamente saturado.",
+      p2: "Este fuerte contraste visual de 'oasis del desierto' hace que no solo sea adecuado para caminatas de exploración, sino también una excelente ubicación para fotógrafos y entusiastas de la geología. Lejos del ruido de la ciudad, muestra una maravilla de color única donde la naturaleza y lo artificial se entrelazan.",
       highlights: {
         title: "Aspectos Destacados",
         items: [
-          "Cascadas de piscinas naturales calizas",
-          "Aguas minerales turquesas cristalinas",
-          "Paisaje de bosque seco andino",
-          "Puntos excepcionales para fotografía",
-          "Senderos de caminata y exploración",
+          "60 hectáreas de maravilla de color natural y artificial",
+          "7 pozas profundas azul-verde",
+          "Paisaje andino semiárido",
+          "Excelente ubicación para fotografía",
+          "Tour de colores diurnos y observación de estrellas nocturnas",
         ],
       },
       management: {
         title: "Gestión",
-        content: "Pozos Azules actualmente es gestionado por la alcaldía de Villa de Leyva en cooperación con la comunidad local. Los ingresos por entrada se utilizan principalmente para mantener el entorno ecológico circundante, mejorar las instalaciones para visitantes (como senderos, miradores, baños, etc.) y apoyar proyectos de desarrollo comunitario. Como un importante sitio de patrimonio natural, la gestión se compromete a proteger el medio ambiente natural mientras proporciona a los visitantes una experiencia segura y de alta calidad."
+        content: "Pozos Azules es un proyecto de iniciativa privada destinado a apoyar el desarrollo turístico en la región. Los ingresos por entrada se utilizan principalmente para mantener el entorno ecológico circundante, mejorar las instalaciones para visitantes (como senderos, miradores, baños, etc.) y apoyar proyectos de desarrollo comunitario. La gestión se compromete a proteger el medio ambiente natural mientras proporciona a los visitantes una experiencia segura y de alta calidad."
       },
     },
     visiting: {
-      title: "Información para Visitantes",
+      title: "Experiencia de Visita",
       hours: {
         title: "Horario",
         content: "Abierto todos los días",
@@ -373,48 +373,48 @@ export const translations = {
       },
       price: {
         title: "Entrada",
-        content: "Aprox. 10.000 - 15.000 COP",
-        note: "Los precios pueden variar según la temporada",
+        content: "20.000 COP / persona (aprox. $5 USD)",
+        note: "Los grupos grandes de turistas necesitan reserva anticipada para obtener descuentos",
       },
       duration: {
         title: "Duración Sugerida",
-        content: "2 - 3 Horas",
-        note: "Incluyendo caminata y tiempo para fotos",
+        content: "1.5 - 3 Horas",
+        note: "Incluyendo caminata, paseo a caballo o tiempo para fotos",
       },
-      getThere: {
-        title: "Cómo Llegar",
-        content: "Desde el centro de Villa de Leyva",
-        note: "En taxi o tour local, aproximadamente 15-20 min en auto",
+      experience: {
+        title: "Opciones de Experiencia",
+        content: "Tour de colores diurno, observación de estrellas nocturna, social y eventos",
+        note: "Diurno para los mejores colores azul-verde, nocturno para observación de estrellas",
       },
       bring: {
         title: "Qué Llevar",
-        items: ["Protector solar y sombrero", "Zapatos cómodos para caminar", "Suficiente agua potable", "Cámara / funda impermeable para celular", "Efectivo (billetes pequeños para entrada y snacks)"],
+        items: ["Protector solar de alto FPS", "Sombrero para el sol", "Zapatos cómodos antideslizantes para caminar", "Suficiente agua potable", "Cámara", "Efectivo (para entrada y snacks)"],
       },
     },
     transportation: {
-      title: "Transporte",
+      title: "Guía de Transporte",
       fromAirport: {
-        title: "Desde el Aeropuerto",
-        content: "Después de llegar al Aeropuerto Internacional El Dorado (Bogotá) u otros aeropuertos cercanos, se recomienda ir primero a Villa de Leyva. Puede tomar un autobús de larga distancia o alquilar un automóvil para un viaje de aproximadamente 3-4 horas.",
+        title: "Fase 1: Del Aeropuerto al Pueblo",
+        content: "Después de aterrizar en el Aeropuerto Internacional El Dorado (BOG) en Bogotá, la capital de Colombia, necesita ir primero a la Terminal de Autobuses de Larga Distancia de Bogotá (Terminal de Transporte). Tome un autobús a Villa de Leyva, aproximadamente 3-4 horas de viaje.",
       },
       selfDrive: {
-        title: "Conducción Propia",
-        content: "Salga de Bogotá, conduzca por la Carretera Nacional 5 hasta Chaparral, luego gire hacia Villa de Leyva. El atractivo está a约 3 km del centro del pueblo y tiene estacionamiento. Tenga en cuenta que algunas secciones del camino son de montaña, por lo que se recomienda conducir un SUV.",
+        title: "Fase 2: Del Pueblo al Atractivo",
+        content: "El atractivo está muy cerca del centro del pueblo. En auto o taxi: Tome la carretera de Villa de Leyva a Santa Sofía, gire en el letrero en la marca de 2 kilómetros; o conduzca a lo largo de la Ruta de los Fósiles (Ruta de los Fósiles) por aproximadamente 3 kilómetros.",
       },
       publicTransport: {
-        title: "Transporte Público",
-        content: "Tome un autobús desde la Estación de Autobuses de Larga Distancia de Bogotá Salt Park to Villa de Leyva, aproximadamente 3 horas. Después de llegar al pueblo, puede tomar un taxi o unirse a un tour local al atractivo, aproximadamente 15-20 minutos en auto.",
+        title: "Transporte Especial",
+        content: "Se recomienda encarecidamente alquilar un ATV (vehículo todo terreno) o montar a caballo a través del desierto para llegar allí. Esta es la forma más clásica y con mayor experiencia para llegar localmente. También puede tomar un taxi, aproximadamente 10-15 minutos en auto.",
       },
       otherWays: {
-        title: "Otras Formas",
-        content: "Puede elegir montar a caballo, alquilar un ATV (vehículo todo terreno) o montar una bicicleta de montaña desde el pueblo al atractivo para una mejor experiencia. Algunos hoteles proporcionan servicio de transporte, se recomienda consultar con anticipación.",
+        title: "Otras Sugerencias",
+        content: "Algunos hoteles proporcionan servicio de transporte, se recomienda consultar con anticipación. También puede elegir montar una bicicleta de montaña desde el pueblo al atractivo para una mejor experiencia.",
       },
     },
     history: {
       title: "Historia y Ciencia",
-      p1: "La formación de Pozos Azules (Piscinas Azules) se remonta a约 30 años (década de 1970). Inicialmente, los agricultores locales excavaron manualmente estos pozos profundos en el suelo de piedra caliza para recoger agua de lluvia para riego.",
-      p2: "Inesperadamente, con el tiempo, el agua subterránea rica en minerales continuó filtrándose y mezclándose con el agua de lluvia. Combinado con altas concentraciones de minerales como azufre, selenio y sulfato de cobre en el suelo, formó un color azul verdoso asombroso bajo la luz solar. Esto hizo que estas piscinas, originalmente para uso agrícola, se convirtieran inesperadamente en una maravilla natural hoy.",
-      p3: "El sitio actualmente es gestionado por el gobierno local y la comunidad. Los ingresos por entrada se utilizan para mantener el entorno circundante y mejorar las instalaciones para visitantes. No es solo una maravilla natural, sino también un espécimen vivo para estudiar el color del agua mineral y la erosión geológica.",
+      p1: "Muchos visitantes se maravillan con la belleza natural aquí, pero Pozos Azules es actualmente un milagro creado por excavación artificial y reacciones geoquímicas. El primer pozo (originalmente como una zanja de almacenamiento de agua agrícola) fue construido hace casi 30 años. Hasta finales del siglo XX, se construyeron 7 pozos en el área.",
+      p2: "Estas piscinas no se volvieron azules inmediatamente. Cuando el agua de lluvia fluye a través de las zanjas circundantes, disuelve altas concentraciones de minerales como selenio, azufre y sulfato de cobre ricos en el suelo. El agua rica en minerales converge en los pozos, y bajo la refracción de la luz solar, cada pozo profundo toma aproximadamente 5 años para asentarse gradualmente y evolucionar al impresionante color azul brillante o azul-verde de hoy.",
+      p3: "Con la prosperidad de la industria turística de Villa de Leyva, en 2000, esta maravilla que había completado su 'transformación de color' fue oficialmente abierta al público, convirtiéndose rápidamente en el hito ecológico más destacado en el área.",
     },
     location: {
       title: "Ubicación y Cómo Llegar",
@@ -428,13 +428,13 @@ export const translations = {
       phoneNote: "Llama antes para confirmar disponibilidad",
     },
     tips: {
-      title: "Consejos de Viaje",
+      title: "Información Práctica y Consejos de Seguridad",
       items: [
-        "La temporada seca (dic-mar, jul-ago) ofrece la mejor experiencia: niveles de agua más bajos revelan los colores azul-verdosos más vívidos.",
-        "Los días laborables son mucho menos concurridos que los fines de semana y festivos.",
-        "El agua de las piscinas es fresca y refrescante para remojar los pies, pero el espacio para nadar es limitado.",
-        "Las superficies rocosas son resbaladizas — usa zapatos con suela antideslizante y mantente en senderos seguros.",
-        "No hay restaurantes en el sitio — come en Villa de Leyva antes de salir.",
+        "⚠️ ABSOLUTAMENTE NO NADAR: Aunque el agua de la piscina se ve tentadora, debido a la concentración extremadamente alta de minerales como azufre y selenio en el agua, que son tóxicos e irritantes fuertes para la piel humana, está estrictamente prohibido nadar o tocar el agua de la piscina.",
+        "La temporada seca (dic-mar, jul-ago) ofrece la mejor experiencia: niveles de agua estables y colores más puros. Se recomienda ir en mañanas soleadas para la mejor reacción de luz.",
+        "Después de la lluvia, la calidad del agua puede mezclarse temporalmente con barro y cambiar de color, por lo que se recomienda elegir días soleados para ir.",
+        "El área desértica tiene luz solar fuerte, por favor asegúrese de preparar protector solar de alto FPS, sombrero para el sol, zapatos cómodos antideslizantes para caminar, y traiga suficiente agua potable.",
+        "No hay restaurantes en el sitio — coma en Villa de Leyva antes de salir. Los días laborables son mucho menos concurridos que los fines de semana y festivos para una visita más tranquila.",
       ],
     },
     gallery: {
@@ -509,7 +509,7 @@ export type Translations = {
     hours: { title: string; content: string; note: string };
     price: { title: string; content: string; note: string };
     duration: { title: string; content: string; note: string };
-    getThere: { title: string; content: string; note: string };
+    experience: { title: string; content: string; note: string };
     bring: { title: string; items: string[] };
   };
   transportation: {

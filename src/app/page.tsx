@@ -128,8 +128,14 @@ function Visiting() {
     { title: t.visiting.hours.title, content: t.visiting.hours.content, note: t.visiting.hours.note },
     { title: t.visiting.price.title, content: t.visiting.price.content, note: t.visiting.price.note },
     { title: t.visiting.duration.title, content: t.visiting.duration.content, note: t.visiting.duration.note },
-    { title: t.visiting.getThere.title, content: t.visiting.getThere.content, note: t.visiting.getThere.note },
   ];
+  
+  const experiences = [
+    { icon: "☀️", title: "日间色彩游", content: "晴朗的白天是欣赏极致蓝绿色的最佳时机。游客可以在广阔的园区内选择徒步漫游，或租用马匹骑行。" },
+    { icon: "🌌", title: "夜间观星行", content: "远离城市光污染，夜幕降临后的 Pozos Azules 展现出另一种壮丽。浩瀚的星空与宁静的水面交相辉映。" },
+    { icon: "🤝", title: "社交与活动", content: "宽阔的生态场地使其成为举办户外活动的理想场所，也是全球旅行者相遇、交流故事的完美驿站。" },
+  ];
+  
   return (
     <section id="visiting" style={{ background: "linear-gradient(180deg, var(--color-cream) 0%, #eee8dd 100%)" }}>
       <div className="section">
@@ -145,6 +151,20 @@ function Visiting() {
                 <div className="info-card-title">{c.title}</div>
                 <div className="info-card-content">{c.content}</div>
                 <div className="info-card-note">{c.note}</div>
+              </div>
+            ))}
+          </div>
+        </ScrollReveal>
+        <ScrollReveal>
+          <h3 style={{ fontFamily: "var(--font-display)", fontSize: "1.4rem", fontWeight: 600, color: "var(--color-deep)", marginBottom: "1.5rem", marginTop: "2rem" }}>
+            游览体验
+          </h3>
+          <div className="transport-grid" style={{ marginBottom: "2rem" }}>
+            {experiences.map((exp, i) => (
+              <div className="transport-card" key={i}>
+                <div className="transport-icon">{exp.icon}</div>
+                <h3 className="transport-title">{exp.title}</h3>
+                <p className="transport-content">{exp.content}</p>
               </div>
             ))}
           </div>
@@ -473,7 +493,18 @@ function Footer() {
           ))}
         </div>
       </div>
-      <p className="footer-text">{t.footer.text}</p>
+      <div className="footer-legal" style={{ maxWidth: "1100px", margin: "0 auto", padding: "1rem 2rem 0", textAlign: "center" }}>
+        <a href="/privacy" style={{ color: "rgba(255,255,255,0.5)", textDecoration: "none", fontSize: "0.8rem", marginRight: "1.5rem" }}>
+          隐私政策
+        </a>
+        <a href="/terms" style={{ color: "rgba(255,255,255,0.5)", textDecoration: "none", fontSize: "0.8rem", marginRight: "1.5rem" }}>
+          服务条款
+        </a>
+        <a href="/cookies" style={{ color: "rgba(255,255,255,0.5)", textDecoration: "none", fontSize: "0.8rem" }}>
+          Cookie 设置
+        </a>
+      </div>
+      <p className="footer-text" style={{ marginTop: "1rem" }}>{t.footer.text}</p>
       <p className="footer-made">{t.footer.made}</p>
     </footer>
   );
