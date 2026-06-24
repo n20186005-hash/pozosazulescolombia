@@ -197,13 +197,13 @@ function Location() {
         <div className="location-section">
           <div className="location-map-container">
             <iframe 
-              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7941.13114354384!2d-73.5555713!3d5.6309573!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e41d78679965ecb%3A0xa86ff28c9192192d!2sPozos%20Azules!5e0!3m2!1szh-CN!2s!4v1782294846835!5m2!1szh-CN!2s"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31764.52463725435!2d-73.57118192252686!3d5.630956146002327!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e41d78679965ecb%3A0xa86ff28c9192192d!2sPozos%20Azules!5e0!3m2!1szh-CN!2sus!4v1782296510297!5m2!1szh-CN!2sus"
               width="800"
               height="600"
               style={{border:0}}
               allowFullScreen
               loading="lazy"
-              referrerPolicy="strict-origin-when-cross-origin"
+              referrerPolicy="no-referrer-when-downgrade"
               title="Pozos Azules Location Map"
             />
           </div>
