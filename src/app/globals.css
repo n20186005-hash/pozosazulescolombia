@@ -482,6 +482,24 @@ body {
   opacity: 0.9;
 }
 
+.location-map-container {
+  width: 100%;
+  height: 350px;
+  overflow: hidden;
+}
+
+.location-map-container iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+@media (max-width: 700px) {
+  .location-map-container {
+    height: 250px;
+  }
+}
+
 .map-pin {
   display: flex;
   flex-direction: column;

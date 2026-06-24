@@ -195,12 +195,18 @@ function Location() {
       </ScrollReveal>
       <ScrollReveal>
         <div className="location-section">
-          <a href={MAPS_URL} target="_blank" rel="noopener noreferrer" className="location-map">
-            <div className="map-pin">
-              <div className="map-pin-icon" />
-              <span className="map-hint">{t.location.mapHint}</span>
-            </div>
-          </a>
+          <div className="location-map-container">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7941.13114354384!2d-73.5555713!3d5.6309573!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e41d78679965ecb%3A0xa86ff28c9192192d!2sPozos%20Azules!5e0!3m2!1szh-CN!2s!4v1782294846835!5m2!1szh-CN!2s"
+              width="800"
+              height="600"
+              style={{border:0}}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="strict-origin-when-cross-origin"
+              title="Pozos Azules Location Map"
+            />
+          </div>
           <div className="location-info">
             <p className="location-address">{t.location.address}</p>
             <a href={MAPS_URL} target="_blank" rel="noopener noreferrer" className="maps-link">
@@ -371,8 +377,6 @@ const GOOGLE_REVIEWS = [
 
 function Reviews() {
   const { t } = useLang();
-  const [showAll, setShowAll] = useState(false);
-  const displayedReviews = showAll ? GOOGLE_REVIEWS : GOOGLE_REVIEWS.slice(0, 3);
 
   return (
     <section id="reviews" className="section">
@@ -384,7 +388,7 @@ function Reviews() {
       </ScrollReveal>
       <ScrollReveal>
         <div className="reviews-grid">
-          {displayedReviews.map((review, i) => (
+          {GOOGLE_REVIEWS.map((review, i) => (
             <div className="review-card" key={i}>
               <div className="review-header">
                 <div className="review-avatar">{review.avatar}</div>
@@ -406,13 +410,6 @@ function Reviews() {
             </div>
           ))}
         </div>
-        {!showAll && GOOGLE_REVIEWS.length > 3 && (
-          <div style={{ textAlign: "center", marginTop: "2rem" }}>
-            <button className="load-more-btn" onClick={() => setShowAll(true)}>
-              {(t as any).reviews?.loadMore || "Load more reviews"}
-            </button>
-          </div>
-        )}
       </ScrollReveal>
       <ScrollReveal>
         <div style={{ textAlign: "center", marginTop: "2rem" }}>
