@@ -42,6 +42,8 @@ function Nav() {
         <div className="nav-links">
           <a href="#about">{t.nav.about}</a>
           <a href="#visiting">{t.nav.visiting}</a>
+          <a href="#transportation">{(t as any).transportation?.title || "Transportation"}</a>
+          <a href="#history">{(t as any).history?.title || "History"}</a>
           <a href="#tips">{t.nav.tips}</a>
           <a href="#reviews">{(t as any).reviews?.title || "Reviews"}</a>
           <a href="#faq">{(t as any).faq?.title || "FAQ"}</a>
@@ -106,6 +108,16 @@ function About() {
           ))}
         </div>
       </ScrollReveal>
+      <ScrollReveal>
+        <div className="management-info" style={{ marginTop: "2rem", padding: "1.5rem", background: "#fff", borderRadius: "2px", boxShadow: "0 2px 12px rgba(0,0,0,0.04)" }}>
+          <h4 style={{ fontFamily: "var(--font-display)", fontSize: "1.1rem", fontWeight: 600, color: "var(--color-deep)", marginBottom: "0.5rem" }}>
+            {(t as any).about?.management?.title || "景点管理"}
+          </h4>
+          <p style={{ fontSize: "0.9rem", lineHeight: "1.7", color: "var(--color-earth-soft)" }}>
+            {(t as any).about?.management?.content || "景点目前由当地政府与社区共同管理，门票收入用于维护周边环境和改善游客设施。"}
+          </p>
+        </div>
+      </ScrollReveal>
     </section>
   );
 }
@@ -157,7 +169,7 @@ function Location() {
   return (
     <section id="location" className="section">
       <ScrollReveal>
-        <p className="section-label">03</p>
+        <p className="section-label">10</p>
         <h2 className="section-title">{t.location.title}</h2>
         <div className="section-divider" />
       </ScrollReveal>
@@ -197,13 +209,65 @@ function Location() {
   );
 }
 
+function Transportation() {
+  const { t } = useLang();
+  const transportOptions = [
+    { icon: "✈️", title: t.transportation?.fromAirport?.title || "从机场出发", content: t.transportation?.fromAirport?.content || "从最近的国际机场到达后，如何前往景点" },
+    { icon: "🚗", title: t.transportation?.selfDrive?.title || "自驾前往", content: t.transportation?.selfDrive?.content || "自驾路线和停车信息" },
+    { icon: "🚌", title: t.transportation?.publicTransport?.title || "公共交通", content: t.transportation?.publicTransport?.content || "公共交通方式和班次" },
+    { icon: "🚶", title: t.transportation?.otherWays?.title || "其他方式", content: t.transportation?.otherWays?.content || "徒步、骑行等其他方式" },
+  ];
+  
+  return (
+    <section id="transportation" className="section">
+      <ScrollReveal>
+        <p className="section-label">04</p>
+        <h2 className="section-title">{(t as any).transportation?.title || "交通方式"}</h2>
+        <div className="section-divider" />
+      </ScrollReveal>
+      <ScrollReveal>
+        <div className="transport-grid">
+          {transportOptions.map((option, i) => (
+            <div className="transport-card" key={i}>
+              <div className="transport-icon">{option.icon}</div>
+              <h3 className="transport-title">{option.title}</h3>
+              <p className="transport-content">{option.content}</p>
+            </div>
+          ))}
+        </div>
+      </ScrollReveal>
+    </section>
+  );
+}
+
+function History() {
+  const { t } = useLang();
+  return (
+    <section id="history" style={{ background: "linear-gradient(180deg, var(--color-cream) 0%, #e8e2d6 100%)" }}>
+      <div className="section">
+        <ScrollReveal>
+          <p className="section-label">05</p>
+          <h2 className="section-title">{(t as any).history?.title || "历史与科普"}</h2>
+          <div className="section-divider" />
+        </ScrollReveal>
+        <ScrollReveal>
+          <div className="history-content">
+            <p className="history-text">{(t as any).history?.p1 || "关于 Pozos Azules 的历史和地质科普信息"}</p>
+            <p className="history-text">{(t as any).history?.p2 || "更多详细信息"}</p>
+          </div>
+        </ScrollReveal>
+      </div>
+    </section>
+  );
+}
+
 function Tips() {
   const { t } = useLang();
   return (
     <section id="tips" style={{ background: "linear-gradient(180deg, var(--color-cream) 0%, #e8e2d6 100%)" }}>
       <div className="section">
         <ScrollReveal>
-          <p className="section-label">04</p>
+          <p className="section-label">06</p>
           <h2 className="section-title">{t.tips.title}</h2>
           <div className="section-divider" />
         </ScrollReveal>
@@ -241,7 +305,7 @@ function Gallery() {
   return (
     <section id="gallery" className="section">
       <ScrollReveal>
-        <p className="section-label">05</p>
+        <p className="section-label">07</p>
         <h2 className="section-title">{(t as any).gallery?.title || "Photo Gallery"}</h2>
         <div className="section-divider" />
       </ScrollReveal>
@@ -254,6 +318,16 @@ function Gallery() {
           ))}
         </div>
       </ScrollReveal>
+      <ScrollReveal>
+        <div style={{ textAlign: "center", marginTop: "2rem" }}>
+          <a href="https://maps.app.goo.gl/Ec2ZbMGsuQjnDyLu7" target="_blank" rel="noopener noreferrer" className="google-maps-btn">
+            {(t as any).gallery?.viewMore || "在 Google Maps 查看更多相片"}
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+              <path d="M7 17L17 7M17 7H7M17 7V17" />
+            </svg>
+          </a>
+        </div>
+      </ScrollReveal>
       {lightboxIndex !== null && (
         <div className="lightbox" onClick={() => setLightboxIndex(null)}>
           <button className="lightbox-close" onClick={() => setLightboxIndex(null)}>×</button>
@@ -263,8 +337,7 @@ function Gallery() {
         </div>
       )}
     </section>
-  );
-}
+  );}
 
 // 模拟谷歌评论数据
 const GOOGLE_REVIEWS = [
@@ -284,7 +357,7 @@ function Reviews() {
   return (
     <section id="reviews" className="section">
       <ScrollReveal>
-        <p className="section-label">06</p>
+        <p className="section-label">08</p>
         <h2 className="section-title">{(t as any).reviews?.title || "Visitor Reviews"}</h2>
         <p className="section-subtitle">{(t as any).reviews?.subtitle || "Real reviews from Google Maps"}</p>
         <div className="section-divider" />
@@ -321,13 +394,24 @@ function Reviews() {
           </div>
         )}
       </ScrollReveal>
+      <ScrollReveal>
+        <div style={{ textAlign: "center", marginTop: "2rem" }}>
+          <a href="https://maps.app.goo.gl/Ec2ZbMGsuQjnDyLu7" target="_blank" rel="noopener noreferrer" className="google-maps-btn">
+            {(t as any).reviews?.viewMore || "在 Google Maps 查看更多评价"}
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+              <path d="M7 17L17 7M17 7H7M17 7V17" />
+            </svg>
+          </a>
+        </div>
+      </ScrollReveal>
     </section>
   );
 }
 
 function FAQ() {
   const { t } = useLang();
-  const [expandedIndex, setExpandedIndex] = useState<number | null>(0); // 默认展开第一个
+  const [expandedIndex, setExpandedIndex] = useState<number | null>(null);
+  const [expandedAll, setExpandedAll] = useState(true); // 默认全部展开
 
   const faqItems = (t as any).faq?.items || [];
 
@@ -335,7 +419,7 @@ function FAQ() {
     <section id="faq" style={{ background: "linear-gradient(180deg, var(--color-cream) 0%, #e8e2d6 100%)" }}>
       <div className="section">
         <ScrollReveal>
-          <p className="section-label">07</p>
+          <p className="section-label">09</p>
           <h2 className="section-title">{(t as any).faq?.title || "Frequently Asked Questions"}</h2>
           <p className="section-subtitle">{(t as any).faq?.subtitle || "Everything you need to know"}</p>
           <div className="section-divider" />
@@ -343,7 +427,7 @@ function FAQ() {
         <ScrollReveal>
           <div className="faq-list">
             {faqItems.map((item: any, i: number) => (
-              <div className={`faq-item ${expandedIndex === i ? "expanded" : ""}`} key={i}>
+              <div className={`faq-item expanded`} key={i}>
                 <button
                   className="faq-question"
                   onClick={() => setExpandedIndex(expandedIndex === i ? null : i)}
@@ -361,13 +445,11 @@ function FAQ() {
                     <path d="M6 9l6 6 6-6" />
                   </svg>
                 </button>
-                {expandedIndex === i && (
-                  <div className="faq-answer">
-                    {item.answer.split("\n\n").map((paragraph: string, j: number) => (
-                      <p key={j}>{paragraph}</p>
-                    ))}
-                  </div>
-                )}
+                <div className="faq-answer">
+                  {item.answer.split("\n\n").map((paragraph: string, j: number) => (
+                    <p key={j}>{paragraph}</p>
+                  ))}
+                </div>
               </div>
             ))}
           </div>
@@ -404,6 +486,8 @@ export default function Home() {
       <Hero />
       <About />
       <Visiting />
+      <Transportation />
+      <History />
       <Tips />
       <Gallery />
       <Reviews />

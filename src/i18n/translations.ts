@@ -5,6 +5,8 @@ export const translations = {
     nav: {
       about: "关于",
       visiting: "游览信息",
+      transportation: "交通方式",
+      history: "历史科普",
       location: "位置",
       tips: "贴士",
     },
@@ -32,6 +34,10 @@ export const translations = {
           "绝佳的摄影取景地",
           "适合徒步与探险",
         ],
+      },
+      management: {
+        title: "景点管理",
+        content: "Pozos Azules 景点目前由比利亚德莱瓦镇政府与当地社区共同管理。门票收入主要用于维护周边生态环境、改善游客设施（如步道、观景台、卫生间等）以及支持社区发展项目。作为一个重要的自然遗产，景点管理方致力于在保护自然环境的同时，为游客提供安全、优质的游览体验。",
       },
     },
     visiting: {
@@ -61,6 +67,31 @@ export const translations = {
         items: ["防晒用品", "舒适的步行鞋", "充足的饮用水", "相机/防水手机套", "现金（小额门票与零食）"],
       },
     },
+    transportation: {
+      title: "交通方式",
+      fromAirport: {
+        title: "从机场出发",
+        content: "从埃尔多拉多国际机场（波哥大）或其他附近机场到达后，建议先前往比利亚德莱瓦镇。可乘坐长途巴士或租车自驾，车程约3-4小时。",
+      },
+      selfDrive: {
+        title: "自驾前往",
+        content: "从波哥大出发，沿5号国道行驶至查帕拉尔，然后转往比利亚德莱瓦。景点距离镇中心约3公里，有停车场。注意部分路段为山路，建议驾驶SUV车型。",
+      },
+      publicTransport: {
+        title: "公共交通",
+        content: "从波哥大盐公园长途巴士站乘坐前往比利亚德莱瓦的巴士，车程约3小时。到达镇上后可乘坐出租车或参加当地旅行团前往景点，车程约15-20分钟。",
+      },
+      otherWays: {
+        title: "其他方式",
+        content: "可选择骑马、租ATV（全地形车）或骑山地自行车从镇上前往景点，体验感更佳。部分酒店提供 shuttle 服务，建议提前咨询。",
+      },
+    },
+    history: {
+      title: "历史与科普",
+      p1: "Pozos Azules（蓝色深潭）的形成可追溯至约30年前（20世纪70年代）。最初，当地农场主为了收集雨水灌溉农田，在这些石灰岩地面上人工挖掘了这些深坑。",
+      p2: "没想到随着时间推移，地下富含矿物质的泉水不断渗出并与雨水混合，加上土壤中高浓度的硫、硒和硫酸铜等矿物质，在阳光照射下形成了令人惊叹的蓝绿色调。这使得这些原本为农业用途的水池，意外成为了今天的自然奇观。",
+      p3: "景点目前由当地政府与社区共同管理，门票收入用于维护周边环境和改善游客设施。这里不仅是自然奇观，也是研究矿物质水体颜色和地质侵蚀的活标本。",
+    },
     location: {
       title: "位置与交通",
       address: "JFJ3+9H Villa de Leyva, 博亚卡哥伦比亚",
@@ -84,11 +115,13 @@ export const translations = {
     },
     gallery: {
       title: "精彩照片",
+      viewMore: "在 Google Maps 查看更多相片",
     },
     reviews: {
       title: "游客评价",
       subtitle: "来自 Google Maps 的真实评价",
       loadMore: "查看更多评价",
+      viewMore: "在 Google Maps 查看更多评价",
     },
     faq: {
       title: "常见问题",
@@ -117,8 +150,8 @@ export const translations = {
       ],
     },
     footer: {
-      text: "Pozos Azules 旅行指南 · 数据仅供参考",
-      made: "为探索者而制",
+      text: "© 2026 Pozos Azules 旅行指南 ·保留所有权利。",
+      made: "本网站是一个独立的第三方旅游资讯项目。我们与当地政府或其他官方机构没有任何关联。为探索者而制",
       linksTitle: "相关链接",
       links: [
         { name: "莱瓦镇市政厅", url: "https://www.villadeleyva-boyaca.gov.co/" },
@@ -134,6 +167,8 @@ export const translations = {
     nav: {
       about: "About",
       visiting: "Visiting",
+      transportation: "Transportation",
+      history: "History",
       location: "Location",
       tips: "Tips",
     },
@@ -161,6 +196,10 @@ export const translations = {
           "Exceptional photography spots",
           "Hiking and exploration trails",
         ],
+      },
+      management: {
+        title: "Management",
+        content: "Pozos Azules is currently managed by the Villa de Leyva municipal government in cooperation with the local community. Entrance fees are mainly used to maintain the surrounding ecological environment, improve visitor facilities (such as trails, viewing platforms, restrooms, etc.), and support community development projects. As an important natural heritage site, the management is committed to protecting the natural environment while providing visitors with a safe and high-quality experience."
       },
     },
     visiting: {
@@ -190,6 +229,31 @@ export const translations = {
         items: ["Sunscreen & hat", "Comfortable walking shoes", "Plenty of drinking water", "Camera / waterproof phone case", "Cash (small bills for entry & snacks)"],
       },
     },
+    transportation: {
+      title: "Transportation",
+      fromAirport: {
+        title: "From the Airport",
+        content: "After arriving at El Dorado International Airport (Bogotá) or other nearby airports, it is recommended to go to Villa de Leyva first. You can take a long-distance bus or rent a car for a drive of about 3-4 hours.",
+      },
+      selfDrive: {
+        title: "Self-Drive",
+        content: "Depart from Bogotá, drive along National Highway 5 to Chapalral, then turn to Villa de Leyva. The attraction is about 3 km from the town center and has parking. Note that some road sections are mountain roads, so it is recommended to drive an SUV.",
+      },
+      publicTransport: {
+        title: "Public Transport",
+        content: "Take a bus from Bogotá Salt Park Long Distance Bus Station to Villa de Leyva, about 3 hours. After arriving in town, you can take a taxi or join a local tour to the attraction, about 15-20 minutes drive.",
+      },
+      otherWays: {
+        title: "Other Ways",
+        content: "You can choose to ride a horse, rent an ATV (all-terrain vehicle) or ride a mountain bike from the town to the attraction for a better experience. Some hotels provide shuttle service, it is recommended to consult in advance.",
+      },
+    },
+    history: {
+      title: "History & Science",
+      p1: "The formation of Pozos Azules (Blue Pools) can be traced back to about 30 years ago (1970s). Initially, local farmers manually dug these deep pits in the limestone ground to collect rainwater for irrigation.",
+      p2: "Unexpectedly, over time, underground mineral-rich spring water continued to seep out and mix with rainwater. Combined with high concentrations of minerals such as sulfur, selenium and copper sulfate in the soil, it formed an amazing blue-green color under sunlight. This made these pools, originally for agricultural use, unexpectedly become a natural wonder today.",
+      p3: "The site is currently managed by the local government and community. Entrance fees are used to maintain the surrounding environment and improve visitor facilities. It is not only a natural wonder, but also a living specimen for studying mineral water color and geological erosion.",
+    },
     location: {
       title: "Location & Directions",
       address: "JFJ3+9H Villa de Leyva, Boyacá, Colombia",
@@ -213,11 +277,13 @@ export const translations = {
     },
     gallery: {
       title: "Photo Gallery",
+      viewMore: "View More Photos on Google Maps",
     },
     reviews: {
       title: "Visitor Reviews",
       subtitle: "Real reviews from Google Maps",
       loadMore: "Load more reviews",
+      viewMore: "View More Reviews on Google Maps",
     },
     faq: {
       title: "Frequently Asked Questions",
@@ -246,8 +312,8 @@ export const translations = {
       ],
     },
     footer: {
-      text: "Pozos Azules Travel Guide · Information for reference only",
-      made: "Made for explorers",
+      text: "© 2026 Pozos Azules Travel Guide · All rights reserved.",
+      made: "This website is an independent third-party travel information project. We have no affiliation with local government or other official institutions. Made for explorers",
       linksTitle: "Related Links",
       links: [
         { name: "Villa de Leyva City Hall", url: "https://www.villadeleyva-boyaca.gov.co/" },
@@ -263,6 +329,8 @@ export const translations = {
     nav: {
       about: "Acerca de",
       visiting: "Visita",
+      transportation: "Transporte",
+      history: "Historia",
       location: "Ubicación",
       tips: "Consejos",
     },
@@ -290,6 +358,10 @@ export const translations = {
           "Puntos excepcionales para fotografía",
           "Senderos de caminata y exploración",
         ],
+      },
+      management: {
+        title: "Gestión",
+        content: "Pozos Azules actualmente es gestionado por la alcaldía de Villa de Leyva en cooperación con la comunidad local. Los ingresos por entrada se utilizan principalmente para mantener el entorno ecológico circundante, mejorar las instalaciones para visitantes (como senderos, miradores, baños, etc.) y apoyar proyectos de desarrollo comunitario. Como un importante sitio de patrimonio natural, la gestión se compromete a proteger el medio ambiente natural mientras proporciona a los visitantes una experiencia segura y de alta calidad."
       },
     },
     visiting: {
@@ -319,6 +391,31 @@ export const translations = {
         items: ["Protector solar y sombrero", "Zapatos cómodos para caminar", "Suficiente agua potable", "Cámara / funda impermeable para celular", "Efectivo (billetes pequeños para entrada y snacks)"],
       },
     },
+    transportation: {
+      title: "Transporte",
+      fromAirport: {
+        title: "Desde el Aeropuerto",
+        content: "Después de llegar al Aeropuerto Internacional El Dorado (Bogotá) u otros aeropuertos cercanos, se recomienda ir primero a Villa de Leyva. Puede tomar un autobús de larga distancia o alquilar un automóvil para un viaje de aproximadamente 3-4 horas.",
+      },
+      selfDrive: {
+        title: "Conducción Propia",
+        content: "Salga de Bogotá, conduzca por la Carretera Nacional 5 hasta Chaparral, luego gire hacia Villa de Leyva. El atractivo está a约 3 km del centro del pueblo y tiene estacionamiento. Tenga en cuenta que algunas secciones del camino son de montaña, por lo que se recomienda conducir un SUV.",
+      },
+      publicTransport: {
+        title: "Transporte Público",
+        content: "Tome un autobús desde la Estación de Autobuses de Larga Distancia de Bogotá Salt Park to Villa de Leyva, aproximadamente 3 horas. Después de llegar al pueblo, puede tomar un taxi o unirse a un tour local al atractivo, aproximadamente 15-20 minutos en auto.",
+      },
+      otherWays: {
+        title: "Otras Formas",
+        content: "Puede elegir montar a caballo, alquilar un ATV (vehículo todo terreno) o montar una bicicleta de montaña desde el pueblo al atractivo para una mejor experiencia. Algunos hoteles proporcionan servicio de transporte, se recomienda consultar con anticipación.",
+      },
+    },
+    history: {
+      title: "Historia y Ciencia",
+      p1: "La formación de Pozos Azules (Piscinas Azules) se remonta a约 30 años (década de 1970). Inicialmente, los agricultores locales excavaron manualmente estos pozos profundos en el suelo de piedra caliza para recoger agua de lluvia para riego.",
+      p2: "Inesperadamente, con el tiempo, el agua subterránea rica en minerales continuó filtrándose y mezclándose con el agua de lluvia. Combinado con altas concentraciones de minerales como azufre, selenio y sulfato de cobre en el suelo, formó un color azul verdoso asombroso bajo la luz solar. Esto hizo que estas piscinas, originalmente para uso agrícola, se convirtieran inesperadamente en una maravilla natural hoy.",
+      p3: "El sitio actualmente es gestionado por el gobierno local y la comunidad. Los ingresos por entrada se utilizan para mantener el entorno circundante y mejorar las instalaciones para visitantes. No es solo una maravilla natural, sino también un espécimen vivo para estudiar el color del agua mineral y la erosión geológica.",
+    },
     location: {
       title: "Ubicación y Cómo Llegar",
       address: "JFJ3+9H Villa de Leyva, Boyacá, Colombia",
@@ -342,11 +439,13 @@ export const translations = {
     },
     gallery: {
       title: "Galería de Fotos",
+      viewMore: "Ver Más Fotos en Google Maps",
     },
     reviews: {
       title: "Reseñas de Visitantes",
       subtitle: "Reseñas reales de Google Maps",
       loadMore: "Ver más reseñas",
+      viewMore: "Ver Más Reseñas en Google Maps",
     },
     faq: {
       title: "Preguntas Frecuentes",
@@ -375,8 +474,8 @@ export const translations = {
       ],
     },
     footer: {
-      text: "Guía de Viaje Pozos Azules · Información solo de referencia",
-      made: "Hecho para exploradores",
+      text: "© 2026 Guía de Viaje Pozos Azules · Todos los derechos reservados.",
+      made: "Este sitio web es un proyecto independiente de información turística de terceros. No tenemos afiliación con el gobierno local u otras instituciones oficiales. Hecho para exploradores",
       linksTitle: "Enlaces Relacionados",
       links: [
         { name: "Alcaldía de Villa de Leyva", url: "https://www.villadeleyva-boyaca.gov.co/" },
@@ -395,7 +494,7 @@ export type LinkItem = { name: string; url: string };
 export type FAQItem = { question: string; answer: string };
 
 export type Translations = {
-  nav: { about: string; visiting: string; location: string; tips: string };
+  nav: { about: string; visiting: string; transportation: string; history: string; location: string; tips: string };
   hero: { tagline: string; title: string; subtitle: string; cta: string };
   rating: { label: string; reviews: string; source: string };
   about: {
@@ -403,6 +502,7 @@ export type Translations = {
     p1: string;
     p2: string;
     highlights: { title: string; items: string[] };
+    management: { title: string; content: string };
   };
   visiting: {
     title: string;
@@ -412,11 +512,19 @@ export type Translations = {
     getThere: { title: string; content: string; note: string };
     bring: { title: string; items: string[] };
   };
+  transportation: {
+    title: string;
+    fromAirport: { title: string; content: string };
+    selfDrive: { title: string; content: string };
+    publicTransport: { title: string; content: string };
+    otherWays: { title: string; content: string };
+  };
+  history: { title: string; p1: string; p2: string; p3: string };
   location: { title: string; address: string; mapHint: string; openMaps: string };
   contact: { title: string; phone: string; phoneNote: string };
   tips: { title: string; items: string[] };
-  gallery: { title: string };
-  reviews: { title: string; subtitle: string; loadMore: string };
+  gallery: { title: string; viewMore: string };
+  reviews: { title: string; subtitle: string; loadMore: string; viewMore: string };
   faq: { title: string; subtitle: string; items: FAQItem[] };
   footer: { text: string; made: string; linksTitle: string; links: LinkItem[] };
 };
