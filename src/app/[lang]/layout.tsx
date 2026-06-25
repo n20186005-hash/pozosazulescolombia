@@ -1,6 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Cormorant_Garamond, DM_Sans } from "next/font/google";
-import "./globals.css";
+import "../globals.css";
 
 const cormorant = Cormorant_Garamond({
   weight: ["400", "600", "700"],
