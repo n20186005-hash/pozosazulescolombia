@@ -6,7 +6,8 @@ export const metadata: Metadata = {
   description: "Pozos Azules 旅行指南隐私政策",
 };
 
-export default function PrivacyPage() {
+export default async function PrivacyPage({ params }: { params: Promise<{ lang: string }> }) {
+  const { lang } = await params;
   return (
     <div style={{ minHeight: "100vh", background: "var(--color-cream)", padding: "2rem" }}>
       <div style={{ maxWidth: "800px", margin: "0 auto", background: "#fff", padding: "3rem", borderRadius: "2px", boxShadow: "0 2px 16px rgba(0,0,0,0.05)" }}>
@@ -71,7 +72,7 @@ export default function PrivacyPage() {
         </section>
 
         <div style={{ marginTop: "3rem", paddingTop: "2rem", borderTop: "1px solid rgba(0,0,0,0.1)" }}>
-          <Link href="/" style={{ color: "var(--color-teal)", textDecoration: "none" }}>
+          <Link href={`/${lang}`} style={{ color: "var(--color-teal)", textDecoration: "none" }}>
             ← 返回首页
           </Link>
         </div>

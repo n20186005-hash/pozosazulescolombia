@@ -477,7 +477,7 @@ function FAQ() {
 }
 
 function Footer() {
-  const { t } = useLang();
+  const { t, locale } = useLang();
   return (
     <footer className="site-footer">
       <div className="footer-links">
@@ -491,13 +491,13 @@ function Footer() {
         </div>
       </div>
       <div className="footer-legal" style={{ maxWidth: "1100px", margin: "0 auto", padding: "1rem 2rem 0", textAlign: "center" }}>
-        <a href="/privacy" style={{ color: "rgba(255,255,255,0.5)", textDecoration: "none", fontSize: "0.8rem", marginRight: "1.5rem" }}>
+        <a href={`/${locale}/privacy`} style={{ color: "rgba(255,255,255,0.5)", textDecoration: "none", fontSize: "0.8rem", marginRight: "1.5rem" }}>
           隐私政策
         </a>
-        <a href="/terms" style={{ color: "rgba(255,255,255,0.5)", textDecoration: "none", fontSize: "0.8rem", marginRight: "1.5rem" }}>
+        <a href={`/${locale}/terms`} style={{ color: "rgba(255,255,255,0.5)", textDecoration: "none", fontSize: "0.8rem", marginRight: "1.5rem" }}>
           服务条款
         </a>
-        <a href="/cookies" style={{ color: "rgba(255,255,255,0.5)", textDecoration: "none", fontSize: "0.8rem" }}>
+        <a href={`/${locale}/cookies`} style={{ color: "rgba(255,255,255,0.5)", textDecoration: "none", fontSize: "0.8rem" }}>
           Cookie 设置
         </a>
       </div>
@@ -507,9 +507,10 @@ function Footer() {
   );
 }
 
-export default function Home() {
+export default async function Home({ params }: { params: Promise<{ lang: string }> }) {
+  const { lang } = await params;
   return (
-    <LangProvider>
+    <LangProvider initialLocale={lang as any}>
       <Nav />
       <Hero />
       <About />

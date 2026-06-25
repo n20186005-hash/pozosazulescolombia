@@ -1,11 +1,10 @@
 "use client";
 
-import React, { createContext, useContext, useState, useCallback } from "react";
+import React, { createContext, useContext } from "react";
 import { translations, type Locale, type Translations } from "@/i18n/translations";
 
 interface LangContextValue {
   locale: Locale;
-  setLocale: (l: Locale) => void;
   t: Translations;
 }
 
@@ -13,15 +12,13 @@ const defaultT: Translations = translations.es;
 
 const LangContext = createContext<LangContextValue>({
   locale: "es",
-  setLocale: () => {},
   t: defaultT,
 });
 
-export function LangProvider({ children }: { children: React.ReactNode }) {
-  const [locale, setLocale] = useState<Locale>("es");
-  const t = translations[locale];
+export function LangProvider({ children, initialLocale }: { children: React.ReactNode; initialLocale: Locale }) {
+  const t = translations[initialLocale] || translations.es;
   return (
-    <LangContext.Provider value={{ locale, setLocale, t }}>
+    <LangContext.Provider value={{ locale: initialLocale, t }}>
       {children}
     </LangContext.Provider>
   );
