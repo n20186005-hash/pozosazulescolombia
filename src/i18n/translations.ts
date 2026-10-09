@@ -20,6 +20,7 @@ export const translations = {
       label: "游客评分",
       reviews: "条评价",
       source: "Google 评论",
+      count: "7,408",
     },
     about: {
       title: "关于 Pozos Azules",
@@ -32,7 +33,7 @@ export const translations = {
           "7 座蓝绿色深潭",
           "半干旱安第斯地貌",
           "绝佳的摄影取景地",
-          "日间色彩游与夜间观星",
+          "日间色彩游与骑马穿越",
         ],
       },
       management: {
@@ -44,8 +45,8 @@ export const translations = {
       title: "游览体验",
       hours: {
         title: "开放时间",
-        content: "每日开放",
-        note: "建议上午前往，光线最佳",
+        content: "每日 8:00 – 16:00",
+        note: "建议上午前往，光线最佳；具体时间请以现场为准",
       },
       price: {
         title: "门票",
@@ -59,9 +60,14 @@ export const translations = {
       },
       experience: {
         title: "游览体验",
-        content: "日间色彩游、夜间观星行、社交与活动",
-        note: "日间适合欣赏蓝绿色，夜间适合观星",
+        content: "日间色彩游、骑马穿越荒漠、摄影胜地",
+        note: "日间适合欣赏蓝绿色，光线最佳",
       },
+      experienceItems: [
+        { icon: "☀️", title: "日间色彩游", content: "晴朗的白天是欣赏极致蓝绿色的最佳时机。游客可以在广阔的园区内选择徒步漫游，或租用马匹骑行。" },
+        { icon: "🐎", title: "骑马穿越荒漠", content: "最经典的抵达与游览方式：骑马或租 ATV 穿越半干旱荒漠，体验感十足，也是当地最受欢迎的玩法。" },
+        { icon: "📷", title: "摄影胜地", content: "强烈视觉反差的色彩奇观，是摄影与地质爱好者的绝佳取景地，上午光线最佳，易于拍出惊艳作品。" },
+      ],
       bring: {
         title: "建议携带",
         items: ["高倍数防晒霜", "遮阳帽", "舒适的防滑步行鞋", "充足的饮用水", "相机", "现金（门票与零食）"],
@@ -129,7 +135,7 @@ export const translations = {
       items: [
         {
           question: "为什么 Pozos Azules 这么出名？",
-          answer: "它能成为游客必打卡的热门地标，主要有以下几个核心原因：\n\n1. 极其反常的绿松石色（且会变色）\n这些水池呈现出一种令人难以置信的亮蓝色或蓝绿色。这不是因为水质清澈见底，而是因为土壤中富含极高浓度的矿物质（包括硫、硒和硫酸铜）。光线反应：这种颜色在阳光直射下（晴天）最为耀眼。如果遇到阴天，水面会变成深绿色；如果是暴雨过后，甚至会暂时混入泥土变成褐色。\n\n2. \"荒漠绿洲\"的强烈视觉反差\n莱瓦镇周边的地貌非常特殊，属于半干旱的荒漠地带，黄沙、干枯的植被与松树交织。在这片看似极度缺水、色彩单调的背景下，突然出现几口色彩极度饱和的蓝色水池，视觉冲击力极强，这让它在社交媒体上极具传播力。\n\n3. 出人意料的\"人工身世\"\n许多游客以为这是大自然的鬼斧神工，但其实它们最初是人工开凿的。大约在 30 年前（20世纪70年代），当地农场主为了收集雨水灌溉而挖了这些深坑。没想到随着时间推移，地下矿物质不断渗出并与雨水混合，最终\"无心插柳\"形成了今天这副奇特的景观。\n\n4. 完美的周边游玩生态\n它距离莱瓦镇（哥伦比亚最著名的殖民风格遗产小镇之一）仅约 3 公里。因为距离近且地貌特殊，这里形成了一条非常成熟的户外体验路线：游客通常不是坐大巴去，而是骑马、租 ATV（全地形车）或者骑山地自行车穿越荒漠前往。这种结合了西部野外探险的体验感，大大拉高了景点的综合吸引力。\n\n一个重要提示：尽管水看起来非常诱人，但这里是绝对禁止下水游泳的。因为水中重金属和矿物质浓度过高，对人体皮肤有毒害作用。它纯粹是一个\"视觉系\"景点。"
+          answer: "它能成为游客必打卡的热门地标，主要有以下几个核心原因：\n\n1. 极其反常的绿松石色（且会变色）\n这些水池呈现出一种令人难以置信的亮蓝色或蓝绿色。这不是因为水质清澈见底，而是因为土壤中富含极高浓度的矿物质（包括硫、硒和硫酸铜）。光线反应：这种颜色在阳光直射下（晴天）最为耀眼。如果遇到阴天，水面会变成深绿色；如果是暴雨过后，甚至会暂时混入泥土变成褐色。\n\n2. \"荒漠绿洲\"的强烈视觉反差\n莱瓦镇周边的地貌非常特殊，属于半干旱的荒漠地带，黄沙、干枯的植被与松树交织。在这片看似极度缺水、色彩单调的背景下，突然出现几口色彩极度饱和的蓝色水池，视觉冲击力极强，这让它在社交媒体上极具传播力。\n\n3. 出人意料的\"人工身世\"\n许多游客以为这是大自然的鬼斧神工，但其实它们最初是人工开凿的。大约在 30 年前，当地农场主为了收集雨水灌溉而挖了这些深坑。没想到随着时间推移，地下矿物质不断渗出并与雨水混合，最终\"无心插柳\"形成了今天这副奇特的景观。\n\n4. 完美的周边游玩生态\n它距离莱瓦镇（哥伦比亚最著名的殖民风格遗产小镇之一）仅约 3 公里。因为距离近且地貌特殊，这里形成了一条非常成熟的户外体验路线：游客通常不是坐大巴去，而是骑马、租 ATV（全地形车）或者骑山地自行车穿越荒漠前往。这种结合了西部野外探险的体验感，大大拉高了景点的综合吸引力。\n\n一个重要提示：尽管水看起来非常诱人，但这里是绝对禁止下水游泳的。因为水中重金属和矿物质浓度过高，对人体皮肤有毒害作用。它纯粹是一个\"视觉系\"景点。"
         },
         {
           question: "最佳游览时间是什么时候？",
@@ -141,7 +147,7 @@ export const translations = {
         },
         {
           question: "门票价格是多少？",
-          answer: "约 10,000 - 15,000 COP（哥伦比亚比索），价格可能随季节调整。建议携带现金，因为附近可能没有刷卡设备。"
+          answer: "门票为每人 COP $20.000（参考价；建议在前往前确认当前有效票价）。大型旅游团队通常需提前预订，部分情况下可享团体折扣。建议携带现金，因为附近可能没有刷卡设备。"
         },
         {
           question: "可以在池子里游泳吗？",
@@ -153,6 +159,9 @@ export const translations = {
       text: "© 2026 Pozos Azules 旅行指南 ·保留所有权利。",
       made: "本网站是一个独立的第三方旅游资讯项目。我们与当地政府或其他官方机构没有任何关联。为探索者而制",
       linksTitle: "相关链接",
+      legalPrivacy: "隐私政策",
+      legalTerms: "服务条款",
+      legalCookies: "Cookie 设置",
       links: [
         { name: "莱瓦镇市政厅", url: "https://www.villadeleyva-boyaca.gov.co/" },
         { name: "博亚卡省政府", url: "https://www.boyaca.gov.co/" },
@@ -182,6 +191,7 @@ export const translations = {
       label: "Visitor Rating",
       reviews: "reviews",
       source: "Google Reviews",
+      count: "7,408",
     },
     about: {
       title: "About Pozos Azules",
@@ -194,7 +204,7 @@ export const translations = {
           "7 blue-green deep pools",
           "Semi-arid Andean landscape",
           "Excellent photography location",
-          "Daytime color tour & night stargazing",
+          "Daytime color tour & desert horseback ride",
         ],
       },
       management: {
@@ -206,8 +216,8 @@ export const translations = {
       title: "Visiting Experience",
       hours: {
         title: "Opening Hours",
-        content: "Open Daily",
-        note: "Morning visits recommended for best light",
+        content: "8:00 AM – 4:00 PM Daily",
+        note: "Morning visits recommended for best light; confirm current hours before visiting.",
       },
       price: {
         title: "Admission",
@@ -221,9 +231,14 @@ export const translations = {
       },
       experience: {
         title: "Experience Options",
-        content: "Daytime color tour, night stargazing, social & events",
-        note: "Daytime for best blue-green colors, nighttime for stargazing",
+        content: "Daytime color tour, desert horseback & ATV, photography hotspot",
+        note: "Daytime for best blue-green colors and light",
       },
+      experienceItems: [
+        { icon: "☀️", title: "Daytime Color Tour", content: "Sunny daytime is the best time to admire the vivid blue-green pools. Walk the grounds or ride a horse through the park." },
+        { icon: "🐎", title: "Desert Horseback & ATV", content: "The most classic way to arrive and explore — ride a horse or an ATV across the semi-arid desert for an unforgettable experience." },
+        { icon: "📷", title: "Photography Hotspot", content: "The striking color contrast makes it a perfect shooting location for photographers and geology lovers, with the best light in the morning." },
+      ],
       bring: {
         title: "What to Bring",
         items: ["High-SPF sunscreen", "Sun hat", "Comfortable non-slip walking shoes", "Plenty of drinking water", "Camera", "Cash (for entry & snacks)"],
@@ -291,7 +306,7 @@ export const translations = {
       items: [
         {
           question: "Why is Pozos Azules so famous?",
-          answer: "It has become a must-visit landmark for several core reasons:\n\n1. Extremely unusual turquoise color (and it changes!) These pools display an incredible bright blue or blue-green color. This isn't because the water is crystal clear, but because the soil is rich in extremely high concentrations of minerals (including sulfur, selenium, and copper sulfate). Light reaction: This color is most dazzling under direct sunlight (sunny days). If it's cloudy, the water surface turns dark green; if after heavy rain, it may even temporarily mix with mud and turn brown.\n\n2. Strong visual contrast of \"desert oasis\"\nThe landscape around Villa de Leyva is very special, belonging to a semi-arid desert area, with yellow sand, dry vegetation and pine trees interwoven. Against this backdrop that seems extremely water-scarce and monotonous in color, several pools of extremely saturated blue water suddenly appear, creating a strong visual impact that makes it highly viral on social media.\n\n3. Surprising \"artificial origin\"\nMany tourists think this is Mother Nature's handiwork, but actually they were originally manually excavated. About 30 years ago (1970s), local farmers dug these deep pits to collect rainwater for irrigation. Unexpectedly, over time, underground minerals kept seeping out and mixing with rainwater, ultimately \"accidentally\" forming today's peculiar landscape.\n\n4. Perfect surrounding tourism ecosystem\nIt's only about 3 kilometers from Villa de Leyva (one of Colombia's most famous colonial heritage towns). Because of the close distance and special landform, a very mature outdoor experience route has formed here: tourists usually don't go by bus, but ride horses, rent ATVs (all-terrain vehicles) or ride mountain bikes through the desert. This experience combined with western wilderness adventure greatly enhances the comprehensive attractiveness of the attraction.\n\nAn important reminder: Although the water looks very tempting, swimming is absolutely prohibited here. Because the concentration of heavy metals and minerals in the water is too high, it is toxic to human skin. It is purely a \"visual\" attraction."
+          answer: "It has become a must-visit landmark for several core reasons:\n\n1. Extremely unusual turquoise color (and it changes!) These pools display an incredible bright blue or blue-green color. This isn't because the water is crystal clear, but because the soil is rich in extremely high concentrations of minerals (including sulfur, selenium, and copper sulfate). Light reaction: This color is most dazzling under direct sunlight (sunny days). If it's cloudy, the water surface turns dark green; if after heavy rain, it may even temporarily mix with mud and turn brown.\n\n2. Strong visual contrast of \"desert oasis\"\nThe landscape around Villa de Leyva is very special, belonging to a semi-arid desert area, with yellow sand, dry vegetation and pine trees interwoven. Against this backdrop that seems extremely water-scarce and monotonous in color, several pools of extremely saturated blue water suddenly appear, creating a strong visual impact that makes it highly viral on social media.\n\n3. Surprising \"artificial origin\"\nMany tourists think this is Mother Nature's handiwork, but actually they were originally manually excavated. About 30 years ago, local farmers dug these deep pits to collect rainwater for irrigation. Unexpectedly, over time, underground minerals kept seeping out and mixing with rainwater, ultimately \"accidentally\" forming today's peculiar landscape.\n\n4. Perfect surrounding tourism ecosystem\nIt's only about 3 kilometers from Villa de Leyva (one of Colombia's most famous colonial heritage towns). Because of the close distance and special landform, a very mature outdoor experience route has formed here: tourists usually don't go by bus, but ride horses, rent ATVs (all-terrain vehicles) or ride mountain bikes through the desert. This experience combined with western wilderness adventure greatly enhances the comprehensive attractiveness of the attraction.\n\nAn important reminder: Although the water looks very tempting, swimming is absolutely prohibited here. Because the concentration of heavy metals and minerals in the water is too high, it is toxic to human skin. It is purely a \"visual\" attraction."
         },
         {
           question: "When is the best time to visit?",
@@ -303,7 +318,7 @@ export const translations = {
         },
         {
           question: "What is the admission price?",
-          answer: "Approximately 10,000 - 15,000 COP (Colombian Pesos), prices may vary by season. It's recommended to bring cash as there may not be card facilities nearby."
+          answer: "General admission is COP $20,000 per person (reference price; please confirm the current valid rate before visiting). Large tour groups usually need advance booking and may receive group discounts. Bring cash, as card facilities may not be available nearby."
         },
         {
           question: "Can you swim in the pools?",
@@ -315,6 +330,9 @@ export const translations = {
       text: "© 2026 Pozos Azules Travel Guide · All rights reserved.",
       made: "This website is an independent third-party travel information project. We have no affiliation with local government or other official institutions. Made for explorers",
       linksTitle: "Related Links",
+      legalPrivacy: "Privacy Policy",
+      legalTerms: "Terms of Service",
+      legalCookies: "Cookie Settings",
       links: [
         { name: "Villa de Leyva City Hall", url: "https://www.villadeleyva-boyaca.gov.co/" },
         { name: "Boyacá Government", url: "https://www.boyaca.gov.co/" },
@@ -344,6 +362,7 @@ export const translations = {
       label: "Calificación",
       reviews: "reseñas",
       source: "Google Reviews",
+      count: "7,408",
     },
     about: {
       title: "Acerca de Pozos Azules",
@@ -356,7 +375,7 @@ export const translations = {
           "7 pozas profundas azul-verde",
           "Paisaje andino semiárido",
           "Excelente ubicación para fotografía",
-          "Tour de colores diurnos y observación de estrellas nocturnas",
+          "Tour de colores diurnos y cabalgata por el desierto",
         ],
       },
       management: {
@@ -368,8 +387,8 @@ export const translations = {
       title: "Experiencia de Visita",
       hours: {
         title: "Horario",
-        content: "Abierto todos los días",
-        note: "Se recomienda visitar por la mañana para mejor luz",
+        content: "8:00 – 16:00 todos los días",
+        note: "Se recomienda visitar por la mañana para mejor luz; confirma el horario vigente antes de visitar.",
       },
       price: {
         title: "Entrada",
@@ -383,9 +402,14 @@ export const translations = {
       },
       experience: {
         title: "Opciones de Experiencia",
-        content: "Tour de colores diurno, observación de estrellas nocturna, social y eventos",
-        note: "Diurno para los mejores colores azul-verde, nocturno para observación de estrellas",
+        content: "Tour de colores diurno, cabalgata y ATV por el desierto, paraíso de la fotografía",
+        note: "Diurno para los mejores colores azul-verde y luz",
       },
+      experienceItems: [
+        { icon: "☀️", title: "Tour de Colores Diurno", content: "Los días soleados son el mejor momento para admirar los intensos colores azul-verde. Camina por el parque o monta a caballo." },
+        { icon: "🐎", title: "Cabalgata y ATV por el Desierto", content: "La forma más clásica de llegar y explorar: monta a caballo o en ATV a través del desierto semiárido para una experiencia inolvidable." },
+        { icon: "📷", title: "Paraíso de la Fotografía", content: "El fuerte contraste de color lo convierte en un excelente lugar para fotógrafos y amantes de la geología, con la mejor luz por la mañana." },
+      ],
       bring: {
         title: "Qué Llevar",
         items: ["Protector solar de alto FPS", "Sombrero para el sol", "Zapatos cómodos antideslizantes para caminar", "Suficiente agua potable", "Cámara", "Efectivo (para entrada y snacks)"],
@@ -453,7 +477,7 @@ export const translations = {
       items: [
         {
           question: "¿Por qué Pozos Azules es tan famoso?",
-          answer: "Se ha convertido en un destino obligatorio por varias razones fundamentales:\n\n1. Color turquesa extremadamente inusual (¡y cambia!) Estas piscinas muestran un color azul brillante o azul-verdoso increíble. Esto no se debe a que el agua sea cristalina, sino porque el suelo es rico en concentraciones extremadamente altas de minerales (incluyendo azufre, selenio y sulfato de cobre). Reacción a la luz: Este color es más deslumbrante bajo luz solar directa (días soleados). Si está nublado, la superficie del agua se vuelve verde oscuro; si es después de fuertes lluvias, incluso puede mezclarse temporalmente con barro y volverse marrón.\n\n2. Fuerte contraste visual de \"oasis del desierto\"\nEl paisaje alrededor de Villa de Leyva es muy especial, pertenece a una zona semidesértica, con arena amarilla, vegetación seca y pinos entrelazados. Contra este fondo que parece extremadamente árido y monótono en color, aparecen repentinamente varias piscinas de agua azul extremadamente saturada, creando un fuerte impacto visual que lo hace muy viral en las redes sociales.\n\n3. Sorpresa de \"origen artificial\"\nMuchos turistas creen que esto es obra de la Madre Naturaleza, pero en realidad fueron excavadas manualmente originalmente. Hace unos 30 años (década de 1970), los agricultores locales cavaron estos pozos profundos para recolectar agua de lluvia para riego. Inesperadamente, con el tiempo, los minerales subterráneos siguieron filtrándose y mezclándose con el agua de lluvia, formando finalmente \"accidentalmente\" el paisaje peculiar de hoy.\n\n4. Ecosistema turístico circundante perfecto\nEstá a solo unos 3 kilómetros de Villa de Leyva (uno de los pueblos patrimoniales coloniales más famosos de Colombia). Debido a la cercanía y la forma especial del terreno, aquí se ha formado una ruta de experiencia al aire libre muy madura: los turistas generalmente no van en autobús, sino que montan a caballo, alquilan ATV (vehículos todo terreno) o montan bicicletas de montaña a través del desierto. Esta experiencia combinada con la aventura de la naturaleza occidental mejora enormemente el atractivo integral del sitio.\n\nUn recordatorio importante: Aunque el agua se ve muy tentadora, está estrictamente prohibido nadar aquí. Debido a que la concentración de metales pesados y minerales en el agua es demasiado alta, es tóxica para la piel humana. Es puramente un atractivo \"visual\"."
+          answer: "Se ha convertido en un destino obligatorio por varias razones fundamentales:\n\n1. Color turquesa extremadamente inusual (¡y cambia!) Estas piscinas muestran un color azul brillante o azul-verdoso increíble. Esto no se debe a que el agua sea cristalina, sino porque el suelo es rico en concentraciones extremadamente altas de minerales (incluyendo azufre, selenio y sulfato de cobre). Reacción a la luz: Este color es más deslumbrante bajo luz solar directa (días soleados). Si está nublado, la superficie del agua se vuelve verde oscuro; si es después de fuertes lluvias, incluso puede mezclarse temporalmente con barro y volverse marrón.\n\n2. Fuerte contraste visual de \"oasis del desierto\"\nEl paisaje alrededor de Villa de Leyva es muy especial, pertenece a una zona semidesértica, con arena amarilla, vegetación seca y pinos entrelazados. Contra este fondo que parece extremadamente árido y monótono en color, aparecen repentinamente varias piscinas de agua azul extremadamente saturada, creando un fuerte impacto visual que lo hace muy viral en las redes sociales.\n\n3. Sorpresa de \"origen artificial\"\nMuchos turistas creen que esto es obra de la Madre Naturaleza, pero en realidad fueron excavadas manualmente originalmente. Hace unos 30 años, los agricultores locales cavaron estos pozos profundos para recolectar agua de lluvia para riego. Inesperadamente, con el tiempo, los minerales subterráneos siguieron filtrándose y mezclándose con el agua de lluvia, formando finalmente \"accidentalmente\" el paisaje peculiar de hoy.\n\n4. Ecosistema turístico circundante perfecto\nEstá a solo unos 3 kilómetros de Villa de Leyva (uno de los pueblos patrimoniales coloniales más famosos de Colombia). Debido a la cercanía y la forma especial del terreno, aquí se ha formado una ruta de experiencia al aire libre muy madura: los turistas generalmente no van en autobús, sino que montan a caballo, alquilan ATV (vehículos todo terreno) o montan bicicletas de montaña a través del desierto. Esta experiencia combinada con la aventura de la naturaleza occidental mejora enormemente el atractivo integral del sitio.\n\nUn recordatorio importante: Aunque el agua se ve muy tentadora, está estrictamente prohibido nadar aquí. Debido a que la concentración de metales pesados y minerales en el agua es demasiado alta, es tóxica para la piel humana. Es puramente un atractivo \"visual\"."
         },
         {
           question: "¿Cuál es el mejor momento para visitar?",
@@ -465,7 +489,7 @@ export const translations = {
         },
         {
           question: "¿Cuál es el precio de entrada?",
-          answer: "Aproximadamente 10,000 - 15,000 COP (Pesos Colombianos), los precios pueden variar según la temporada. Se recomienda llevar efectivo ya que puede que no haya instalaciones para tarjetas cerca."
+          answer: "La entrada general es de COP $20.000 por persona (tarifa de referencia; confirma el precio vigente antes de visitar). Los grupos grandes de turistas suelen necesitar reserva anticipada y pueden obtener descuentos. Lleva efectivo, ya que puede que no haya instalaciones para tarjetas cerca."
         },
         {
           question: "¿Se puede nadar en las piscinas?",
@@ -477,6 +501,9 @@ export const translations = {
       text: "© 2026 Guía de Viaje Pozos Azules · Todos los derechos reservados.",
       made: "Este sitio web es un proyecto independiente de información turística de terceros. No tenemos afiliación con el gobierno local u otras instituciones oficiales. Hecho para exploradores",
       linksTitle: "Enlaces Relacionados",
+      legalPrivacy: "Política de Privacidad",
+      legalTerms: "Términos de Servicio",
+      legalCookies: "Configuración de Cookies",
       links: [
         { name: "Alcaldía de Villa de Leyva", url: "https://www.villadeleyva-boyaca.gov.co/" },
         { name: "Gobernación de Boyacá", url: "https://www.boyaca.gov.co/" },
@@ -496,7 +523,7 @@ export type FAQItem = { question: string; answer: string };
 export type Translations = {
   nav: { about: string; visiting: string; transportation: string; history: string; location: string; tips: string };
   hero: { tagline: string; title: string; subtitle: string; cta: string };
-  rating: { label: string; reviews: string; source: string };
+  rating: { label: string; reviews: string; source: string; count: string };
   about: {
     title: string;
     p1: string;
@@ -510,6 +537,7 @@ export type Translations = {
     price: { title: string; content: string; note: string };
     duration: { title: string; content: string; note: string };
     experience: { title: string; content: string; note: string };
+    experienceItems: { icon: string; title: string; content: string }[];
     bring: { title: string; items: string[] };
   };
   transportation: {
@@ -526,5 +554,5 @@ export type Translations = {
   gallery: { title: string; viewMore: string };
   reviews: { title: string; subtitle: string; loadMore: string; viewMore: string };
   faq: { title: string; subtitle: string; items: FAQItem[] };
-  footer: { text: string; made: string; linksTitle: string; links: LinkItem[] };
+  footer: { text: string; made: string; linksTitle: string; links: LinkItem[]; legalPrivacy: string; legalTerms: string; legalCookies: string };
 };

@@ -4,7 +4,7 @@ import React, { useEffect, useState, useRef } from "react";
 import { LangProvider, useLang } from "@/components/LangProvider";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 
-const MAPS_URL = "https://maps.app.goo.gl/reRivwy48qXDQqrQ6";
+const MAPS_URL = "https://maps.app.goo.gl/Ec2ZbMGsuQjnDyLu7";
 
 const GALLERY_IMAGES = Array.from({ length: 19 }, (_, i) => `/gallery/pozos-azules${i + 1}.jpg`);
 
@@ -76,7 +76,7 @@ function Hero() {
       <div className="hero-meta">
         <div className="hero-rating">4.3</div>
         <div className="hero-stars">★★★★☆</div>
-        <div className="hero-reviews">7,279 {t.rating.reviews} · {t.rating.source}</div>
+        <div className="hero-reviews">{t.rating.count} {t.rating.reviews} · {t.rating.source}</div>
       </div>
     </section>
   );
@@ -111,10 +111,10 @@ function About() {
       <ScrollReveal>
         <div className="management-info" style={{ marginTop: "2rem", padding: "1.5rem", background: "#fff", borderRadius: "2px", boxShadow: "0 2px 12px rgba(0,0,0,0.04)" }}>
           <h4 style={{ fontFamily: "var(--font-display)", fontSize: "1.1rem", fontWeight: 600, color: "var(--color-deep)", marginBottom: "0.5rem" }}>
-            {(t as any).about?.management?.title || "景点管理"}
+            {(t as any).about?.management?.title || "Management"}
           </h4>
           <p style={{ fontSize: "0.9rem", lineHeight: "1.7", color: "var(--color-earth-soft)" }}>
-            {(t as any).about?.management?.content || "景点目前由当地政府与社区共同管理，门票收入用于维护周边环境和改善游客设施。"}
+            {(t as any).about?.management?.content || "This attraction is managed locally; ticket revenue is used to maintain the environment and visitor facilities."}
           </p>
         </div>
       </ScrollReveal>
@@ -130,11 +130,7 @@ function Visiting() {
     { title: t.visiting.duration.title, content: t.visiting.duration.content, note: t.visiting.duration.note },
   ];
   
-  const experiences = [
-    { icon: "☀️", title: "日间色彩游", content: "晴朗的白天是欣赏极致蓝绿色的最佳时机。游客可以在广阔的园区内选择徒步漫游，或租用马匹骑行。" },
-    { icon: "🌌", title: "夜间观星行", content: "远离城市光污染，夜幕降临后的 Pozos Azules 展现出另一种壮丽。浩瀚的星空与宁静的水面交相辉映。" },
-    { icon: "🤝", title: "社交与活动", content: "宽阔的生态场地使其成为举办户外活动的理想场所，也是全球旅行者相遇、交流故事的完美驿站。" },
-  ];
+  const experiences = t.visiting.experienceItems;
   
   return (
     <section id="visiting" style={{ background: "linear-gradient(180deg, var(--color-cream) 0%, #eee8dd 100%)" }}>
@@ -157,7 +153,7 @@ function Visiting() {
         </ScrollReveal>
         <ScrollReveal>
           <h3 style={{ fontFamily: "var(--font-display)", fontSize: "1.4rem", fontWeight: 600, color: "var(--color-deep)", marginBottom: "1.5rem", marginTop: "2rem" }}>
-            游览体验
+            {t.visiting.experience.title}
           </h3>
           <div className="transport-grid" style={{ marginBottom: "2rem" }}>
             {experiences.map((exp, i) => (
@@ -238,17 +234,17 @@ function Location() {
 function Transportation() {
   const { t } = useLang();
   const transportOptions = [
-    { icon: "✈️", title: t.transportation?.fromAirport?.title || "从机场出发", content: t.transportation?.fromAirport?.content || "从最近的国际机场到达后，如何前往景点" },
-    { icon: "🚗", title: t.transportation?.selfDrive?.title || "自驾前往", content: t.transportation?.selfDrive?.content || "自驾路线和停车信息" },
-    { icon: "🚌", title: t.transportation?.publicTransport?.title || "公共交通", content: t.transportation?.publicTransport?.content || "公共交通方式和班次" },
-    { icon: "🚶", title: t.transportation?.otherWays?.title || "其他方式", content: t.transportation?.otherWays?.content || "徒步、骑行等其他方式" },
+    { icon: "✈️", title: t.transportation?.fromAirport?.title || "From the Airport", content: t.transportation?.fromAirport?.content || "How to reach the attraction after arriving at the nearest international airport" },
+    { icon: "🚗", title: t.transportation?.selfDrive?.title || "Self-Drive", content: t.transportation?.selfDrive?.content || "Driving route and parking information" },
+    { icon: "🚌", title: t.transportation?.publicTransport?.title || "Public Transport", content: t.transportation?.publicTransport?.content || "Public transport options and schedules" },
+    { icon: "🚶", title: t.transportation?.otherWays?.title || "Other Ways", content: t.transportation?.otherWays?.content || "Walking, cycling and other options" },
   ];
   
   return (
     <section id="transportation" className="section">
       <ScrollReveal>
         <p className="section-label">04</p>
-        <h2 className="section-title">{(t as any).transportation?.title || "交通方式"}</h2>
+        <h2 className="section-title">{(t as any).transportation?.title || "Transportation"}</h2>
         <div className="section-divider" />
       </ScrollReveal>
       <ScrollReveal>
@@ -273,13 +269,13 @@ function History() {
       <div className="section">
         <ScrollReveal>
           <p className="section-label">05</p>
-          <h2 className="section-title">{(t as any).history?.title || "历史与科普"}</h2>
+          <h2 className="section-title">{(t as any).history?.title || "History & Science"}</h2>
           <div className="section-divider" />
         </ScrollReveal>
         <ScrollReveal>
           <div className="history-content">
-            <p className="history-text">{(t as any).history?.p1 || "关于 Pozos Azules 的历史和地质科普信息"}</p>
-            <p className="history-text">{(t as any).history?.p2 || "更多详细信息"}</p>
+            <p className="history-text">{(t as any).history?.p1 || "History and geology information about Pozos Azules"}</p>
+            <p className="history-text">{(t as any).history?.p2 || "More details"}</p>
           </div>
         </ScrollReveal>
       </div>
@@ -347,7 +343,7 @@ function Gallery() {
       <ScrollReveal>
         <div style={{ textAlign: "center", marginTop: "2rem" }}>
           <a href="https://maps.app.goo.gl/Ec2ZbMGsuQjnDyLu7" target="_blank" rel="noopener noreferrer" className="google-maps-btn">
-            {(t as any).gallery?.viewMore || "在 Google Maps 查看更多相片"}
+            {(t as any).gallery?.viewMore || "View More Photos on Google Maps"}
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
               <path d="M7 17L17 7M17 7H7M17 7V17" />
             </svg>
@@ -365,16 +361,6 @@ function Gallery() {
     </section>
   );}
 
-// 模拟谷歌评论数据
-const GOOGLE_REVIEWS = [
-  { name: "María González", avatar: "MG", rating: 5, date: "2024-01-15", text: "¡Increíble lugar! Los colores de las aguas son simplemente mágicos. Una experiencia única que no te puedes perder si visitas Villa de Leyva." },
-  { name: "John Smith", avatar: "JS", rating: 5, date: "2024-02-20", text: "Amazing natural pools! The turquoise color is unreal. Great place for photography. Just remember to bring water and sunscreen." },
-  { name: "李小明", avatar: "李", rating: 4, date: "2024-03-10", text: "非常漂亮的自然景观！水的颜色真的很惊艳，不过要注意防晒和带足够的水。值得一来。" },
-  { name: "Sophie Martin", avatar: "SM", rating: 5, date: "2024-01-28", text: "Un endroit magique! La couleur de l'eau est incroyable. Je recommande vivement de visiter tôt le matin pour éviter la foule." },
-  { name: "Carlos Ruiz", avatar: "CR", rating: 5, date: "2024-02-05", text: "Excelente lugar para visitar en familia. Los niños quedaron fascinados con los colores del agua. Lleguen temprano para evitar aglomeraciones." },
-  { name: "Anna Kowalska", avatar: "AK", rating: 4, date: "2024-03-22", text: "Przepiękne miejsce! Kolory wody są niesamowite. Warto odwiedzić, ale trzeba pamiętać o zabraniu wody i kremu z filtrem." },
-];
-
 function Reviews() {
   const { t } = useLang();
 
@@ -387,38 +373,34 @@ function Reviews() {
         <div className="section-divider" />
       </ScrollReveal>
       <ScrollReveal>
-        <div className="reviews-grid">
-          {GOOGLE_REVIEWS.map((review, i) => (
-            <div className="review-card" key={i}>
-              <div className="review-header">
-                <div className="review-avatar">{review.avatar}</div>
-                <div className="review-info">
-                  <div className="review-name">{review.name}</div>
-                  <div className="review-date">{review.date}</div>
-                </div>
-                <div className="review-rating">
-                  {"★".repeat(review.rating)}{"☆".repeat(5 - review.rating)}
-                </div>
-              </div>
-              <p className="review-text">{review.text}</p>
-              <div className="review-source">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
-                  <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" fill="#4285F4"/>
-                </svg>
-                Google
-              </div>
-            </div>
-          ))}
-        </div>
-      </ScrollReveal>
-      <ScrollReveal>
-        <div style={{ textAlign: "center", marginTop: "2rem" }}>
-          <a href="https://maps.app.goo.gl/Ec2ZbMGsuQjnDyLu7" target="_blank" rel="noopener noreferrer" className="google-maps-btn">
-            {(t as any).reviews?.viewMore || "在 Google Maps 查看更多评价"}
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-              <path d="M7 17L17 7M17 7H7M17 7V17" />
-            </svg>
-          </a>
+        <div
+          style={{
+            maxWidth: "640px",
+            margin: "0 auto",
+            padding: "2.5rem 2rem",
+            background: "#fff",
+            borderRadius: "2px",
+            boxShadow: "0 2px 16px rgba(0,0,0,0.05)",
+            textAlign: "center",
+          }}
+        >
+          <div style={{ fontFamily: "var(--font-display)", fontSize: "3.5rem", fontWeight: 700, color: "var(--color-deep)", lineHeight: 1 }}>
+            4.3
+          </div>
+          <div style={{ fontSize: "1.4rem", color: "var(--color-azure)", letterSpacing: "2px", margin: "0.5rem 0" }}>
+            ★★★★☆
+          </div>
+          <div style={{ fontSize: "0.95rem", color: "var(--color-earth-soft)" }}>
+            {t.rating.count} {t.rating.reviews} · {t.rating.source}
+          </div>
+          <div style={{ marginTop: "1.5rem" }}>
+            <a href={MAPS_URL} target="_blank" rel="noopener noreferrer" className="google-maps-btn">
+              {(t as any).reviews?.viewMore || "View more reviews on Google Maps"}
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                <path d="M7 17L17 7M17 7H7M17 7V17" />
+              </svg>
+            </a>
+          </div>
         </div>
       </ScrollReveal>
     </section>
@@ -492,13 +474,13 @@ function Footer() {
       </div>
       <div className="footer-legal" style={{ maxWidth: "1100px", margin: "0 auto", padding: "1rem 2rem 0", textAlign: "center" }}>
         <a href={`/${locale}/privacy`} style={{ color: "rgba(255,255,255,0.5)", textDecoration: "none", fontSize: "0.8rem", marginRight: "1.5rem" }}>
-          隐私政策
+          {t.footer.legalPrivacy}
         </a>
         <a href={`/${locale}/terms`} style={{ color: "rgba(255,255,255,0.5)", textDecoration: "none", fontSize: "0.8rem", marginRight: "1.5rem" }}>
-          服务条款
+          {t.footer.legalTerms}
         </a>
         <a href={`/${locale}/cookies`} style={{ color: "rgba(255,255,255,0.5)", textDecoration: "none", fontSize: "0.8rem" }}>
-          Cookie 设置
+          {t.footer.legalCookies}
         </a>
       </div>
       <p className="footer-text" style={{ marginTop: "1rem" }}>{t.footer.text}</p>

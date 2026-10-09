@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next'
 
 export const dynamic = "force-static";
 
-const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://pozosazulescolombia.com'
+const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.pozosazulescolombia.com'
 const locales = ['en', 'es', 'zh']
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -17,9 +17,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1,
       alternates: {
         languages: {
+          'es-CO': `${baseUrl}/es`,
           en: `${baseUrl}/en`,
-          es: `${baseUrl}/es`,
-          zh: `${baseUrl}/zh`,
+          'zh-CN': `${baseUrl}/zh`,
         },
       },
     })
@@ -34,9 +34,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
         priority: 0.5,
         alternates: {
           languages: {
+            'es-CO': `${baseUrl}/es/${page}`,
             en: `${baseUrl}/en/${page}`,
-            es: `${baseUrl}/es/${page}`,
-            zh: `${baseUrl}/zh/${page}`,
+            'zh-CN': `${baseUrl}/zh/${page}`,
           },
         },
       })

@@ -17,19 +17,38 @@ const dmSans = DM_Sans({
   display: "swap",
 });
 
-const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://pozosazulescolombia.com";
+const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://www.pozosazulescolombia.com";
+
+const META: Record<string, { title: string; description: string }> = {
+  en: {
+    title: "Pozos Azules Villa de Leyva: Tickets, Hours & Visiting Guide",
+    description:
+      "Plan your visit to Pozos Azules near Villa de Leyva, Colombia. Find admission prices, opening hours, directions, photos and helpful travel tips.",
+  },
+  es: {
+    title: "Pozos Azules Villa de Leyva: Precio, Horarios y Cómo Llegar",
+    description:
+      "Descubre Pozos Azules en Villa de Leyva, Boyacá. Consulta el precio de entrada, horarios, ubicación, cómo llegar y consejos para planear tu visita.",
+  },
+  zh: {
+    title: "Pozos Azules Villa de Leyva：门票、开放时间与游览攻略",
+    description:
+      "规划你的 Pozos Azules 之行：位于哥伦比亚 Villa de Leyva 附近的蓝色深潭，提供门票价格、开放时间、交通方式、照片与实用旅行建议。",
+  },
+};
 
 export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
   const { lang } = await params;
+  const meta = META[lang] || META.en;
+  const ogLocale = lang === "zh" ? "zh_CN" : lang === "es" ? "es_CO" : "en_US";
   
   return {
     metadataBase: new URL(baseUrl),
     title: {
-      default: "Pozos Azules — Villa de Leyva, Colombia",
+      default: meta.title,
       template: "%s | Pozos Azules",
     },
-    description:
-      "A travel guide to Pozos Azules, the stunning natural blue pools near Villa de Leyva, Boyacá, Colombia.",
+    description: meta.description,
     keywords: [
       "Pozos Azules",
       "Villa de Leyva",
@@ -48,12 +67,11 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
     },
     openGraph: {
       type: "website",
-      locale: lang === "zh" ? "zh_CN" : lang === "es" ? "es_CO" : "en_US",
-      alternateLocale: ["en_US", "es_CO", "zh_CN"].filter((l) => !l.startsWith(lang)),
+      locale: ogLocale,
+      alternateLocale: ["en_US", "es_CO", "zh_CN"].filter((l) => l !== ogLocale),
       url: `${baseUrl}/${lang}`,
-      title: "Pozos Azules — Villa de Leyva, Colombia",
-      description:
-        "A travel guide to Pozos Azules, the stunning natural blue pools near Villa de Leyva, Boyacá, Colombia.",
+      title: meta.title,
+      description: meta.description,
       siteName: "Pozos Azules Travel Guide",
       images: [
         {
@@ -66,9 +84,8 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
     },
     twitter: {
       card: "summary_large_image",
-      title: "Pozos Azules — Villa de Leyva, Colombia",
-      description:
-        "A travel guide to Pozos Azules, the stunning natural blue pools near Villa de Leyva, Boyacá, Colombia.",
+      title: meta.title,
+      description: meta.description,
       images: ["/gallery/pozos-azules1.jpg"],
     },
     robots: {
@@ -85,9 +102,9 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
     alternates: {
       canonical: `/${lang}`,
       languages: {
+        "es-CO": "/es",
         "en": "/en",
-        "es": "/es",
-        "zh": "/zh",
+        "zh-CN": "/zh",
         "x-default": "/en",
       },
     },
