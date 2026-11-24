@@ -1,15 +1,15 @@
 const { chromium } = require(process.env.RUNNER_TEMP + '/visual-check/node_modules/playwright');
 const fs=require('node:fs');
 (async()=>{
-  const browser=await chromium.launch();
+  const browser=await chromium.launch({executablePath:'/usr/bin/google-chrome',args:['--no-sandbox']});
   const page=await browser.newPage();
   const records=[]; const origin='https://www.pozosazulescolombia.com';
   for (const [device,width,height] of [['desktop',1440,900],['mobile',390,844]]) {
     await page.setViewportSize({width,height});
     for (const [type,path] of [['home','/es'],['detail','/es/nearby/museo-fosil']]) {
-      await page.goto(origin+path,{waitUntil:'networkidle',timeout:45000});
+      await page.goto(origin+path,{waitUntil:'domcontentloaded',timeout:45000});
       await page.locator('footer').waitFor({state:'attached'});
-      await page.evaluate(()=>document.fonts.ready);
+      await page.evaluate(()=>document.fonts.ready); await page.waitForTimeout(1200);
       await page.screenshot({path:'screens/'+device+'-'+type+'-hero.png'});
       await page.locator('footer').scrollIntoViewIfNeeded();
       await page.screenshot({path:'screens/'+device+'-'+type+'-footer.png'});
