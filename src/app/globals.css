@@ -1149,3 +1149,8 @@ body {
 .place-guide details {padding:.8rem 0}
 .place-guide figure img {max-width:100%;height:auto;max-height:26rem}
 .nearby-index li {padding:.5rem}
+
+@font-face {font-family: 'Cormorant Garamond';font-style:normal;font-weight:300 700;font-display:swap;src:url('/fonts/01e4147cff8141ee-s.p.3huc2loe0ie8a.woff2') format('woff2')}
+@font-face {font-family: 'DM Sans';font-style:normal;font-weight:300 700;font-display:swap;src:url('/fonts/5c285b27cdda1fe8-s.p.2_mbdogr7ni8i.woff2') format('woff2')}
+@font-face {font-family: 'Cormorant Garamond';font-style:italic;font-weight:300 700;font-display:swap;src:url('/fonts/8bd76523131fa0fc-s.p.1pvupmngxrt5z.woff2') format('woff2')}
+:root {--font-body: "DM Sans",sans-serif;--font-display:"Cormorant Garamond",serif}

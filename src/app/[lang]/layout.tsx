@@ -1,21 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Cormorant_Garamond, DM_Sans } from "next/font/google";
 import "../globals.css";
-
-const cormorant = Cormorant_Garamond({
-  weight: ["400", "600", "700"],
-  style: ["normal", "italic"],
-  subsets: ["latin"],
-  variable: "--font-display",
-  display: "swap",
-});
-
-const dmSans = DM_Sans({
-  weight: ["300", "400", "500", "600"],
-  subsets: ["latin"],
-  variable: "--font-body",
-  display: "swap",
-});
 
 const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://www.pozosazulescolombia.com";
 
@@ -129,7 +113,7 @@ export default async function RootLayout({
 }>) {
   const { lang } = await params;
   return (
-    <html lang={lang} className={`${cormorant.variable} ${dmSans.variable}`}>
+    <html lang={lang}>
       <body>{children}</body>
     </html>
   );
