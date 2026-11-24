@@ -1,0 +1,25 @@
+name: Build and inspect the 93 Boyacá guides
+on:
+  push:
+    branches: ['repair/140-boyaca-guides-20261124']
+permissions:
+  contents: read
+jobs:
+  render-guides:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with: {persist-credentials: false}
+      - name: Identify prior locally bundled typefaces
+        run: for f in public/fonts/*.woff2; do echo "FONT $(basename "$f") $(fc-scan --format '%{family} %{style} %{lang}' "$f" | cut -c1-190)"; done
+      - uses: actions/setup-node@v4
+        with: {node-version: 22, cache: npm}
+      - run: npm ci --no-audit --no-fund
+      - run: npm run build
+        env: {NEXT_TELEMETRY_DISABLED: 1}
+      - name: Compare 93 rendered pages, 31 site photos and 19 original images
+        run: python3 .github/verify-140.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with: {name: candidate-140, path: verified-140.json}
