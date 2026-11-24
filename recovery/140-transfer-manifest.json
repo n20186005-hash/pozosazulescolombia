@@ -1,0 +1,551 @@
+{
+  "row": 140,
+  "repo": "n20186005-hash/pozosazulescolombia",
+  "domain": "www.pozosazulescolombia.com",
+  "productionBase": "a53142a75379dc3447efdd4d7c9775efe7ea2623",
+  "verifiedLocalCommit": "891095703aa89c2634b4f33203fa9ab49960722c",
+  "successfulLocalRoutes": 93,
+  "successfulHomepageLinks": [
+    31,
+    31,
+    31
+  ],
+  "independentPhotoHashes": 31,
+  "files": [
+    {
+      "index": 0,
+      "path": "next.config.ts",
+      "bytes": 156,
+      "gitBlobSHA": "0342abebb75e361d342ce971bf90e809b160f480",
+      "uploaded": true
+    },
+    {
+      "index": 1,
+      "path": "public/fonts/01e4147cff8141ee-s.p.3huc2loe0ie8a.woff2",
+      "bytes": 37776,
+      "gitBlobSHA": "8c0c6df016579e0202e90dc52f96d7d2ddba01fa",
+      "uploaded": true
+    },
+    {
+      "index": 2,
+      "path": "public/fonts/0926c12c4384550f-s.1-qpv3jvnkkyl.woff2",
+      "bytes": 34444,
+      "gitBlobSHA": "f1bd49205ea1429b90967a649d5366800dc6bbfd",
+      "uploaded": true
+    },
+    {
+      "index": 3,
+      "path": "public/fonts/1f9e983605289f29-s.3aak_kra40y8r.woff2",
+      "bytes": 33740,
+      "gitBlobSHA": "d2680fd15f4caa1cf9a73b9b176fed0f48e8de9e",
+      "uploaded": true
+    },
+    {
+      "index": 4,
+      "path": "public/fonts/591574edbe85c69b-s.2cu8l7zf4s4ec.woff2",
+      "bytes": 21264,
+      "gitBlobSHA": "22b856d9ab5d234b8500e8a6b4e2a23f3fba27d3",
+      "uploaded": true
+    },
+    {
+      "index": 5,
+      "path": "public/fonts/5c285b27cdda1fe8-s.p.2_mbdogr7ni8i.woff2",
+      "bytes": 36980,
+      "gitBlobSHA": "8f8cb5508a0cd509c323ae5ad0f4f3d492be88b4",
+      "uploaded": true
+    },
+    {
+      "index": 6,
+      "path": "public/fonts/8bd76523131fa0fc-s.p.1pvupmngxrt5z.woff2",
+      "bytes": 39304,
+      "gitBlobSHA": "0dbab0b25bbb7e19c85295d0a25df5de7a7822a3",
+      "uploaded": true
+    },
+    {
+      "index": 7,
+      "path": "public/fonts/9cc5c0547f229dea-s.00y8kskkn0hyx.woff2",
+      "bytes": 23408,
+      "gitBlobSHA": "32fb2bf7a97672b1afca4fc20e310b07586a4595",
+      "uploaded": true
+    },
+    {
+      "index": 8,
+      "path": "public/fonts/acf349172f10b359-s.0gv8q2vqi14yg.woff2",
+      "bytes": 11556,
+      "gitBlobSHA": "ca5fbebe00792bcba68cf71a4bbecb2043ff8453",
+      "uploaded": true
+    },
+    {
+      "index": 9,
+      "path": "public/fonts/b0947914c9718a1e-s.1xjn85gt7t6qs.woff2",
+      "bytes": 21132,
+      "gitBlobSHA": "1fc2159f0f8021e90de58b4d4635901119bc8161",
+      "uploaded": true
+    },
+    {
+      "index": 10,
+      "path": "public/fonts/c3cb240f9c892514-s.3z_x6eowsw16y.woff2",
+      "bytes": 18192,
+      "gitBlobSHA": "cf1d1c979411e291c5522e6cc186f4dac082d65a",
+      "uploaded": true
+    },
+    {
+      "index": 11,
+      "path": "public/fonts/d0b60be57f16ee32-s.1xtu7gopqv2u0.woff2",
+      "bytes": 11264,
+      "gitBlobSHA": "7c345ae8e6c16215dbed90eaf59c6eb6f4116359",
+      "uploaded": true
+    },
+    {
+      "index": 12,
+      "path": "public/fonts/d8cddd76dbfeaef0-s.1mblz1wog092a.woff2",
+      "bytes": 25196,
+      "gitBlobSHA": "4f401d3697fc25f6c5516bd69cf8bb374a085f9c",
+      "uploaded": true
+    },
+    {
+      "index": 13,
+      "path": "public/nearby/arcabuco.webp",
+      "bytes": 125632,
+      "gitBlobSHA": "8a4efd7fce308e30961c9d62a69665c25ec3c99b",
+      "uploaded": true
+    },
+    {
+      "index": 14,
+      "path": "public/nearby/candelaria.webp",
+      "bytes": 103048,
+      "gitBlobSHA": "7c9d1bf086500aebf75eef9a498490dec2119cbc",
+      "uploaded": true
+    },
+    {
+      "index": 15,
+      "path": "public/nearby/casa-escribano.webp",
+      "bytes": 35684,
+      "gitBlobSHA": "7deb4b5b15925414482eee827c24f1b945776eb2",
+      "uploaded": true
+    },
+    {
+      "index": 16,
+      "path": "public/nearby/casa-fundador.webp",
+      "bytes": 52488,
+      "gitBlobSHA": "41a7ece8d272a9f9bf13382579c58f92de0a5bb7",
+      "uploaded": true
+    },
+    {
+      "index": 17,
+      "path": "public/nearby/casa-narino.webp",
+      "bytes": 62918,
+      "gitBlobSHA": "7c6b3f8f02d921da75b40dd2bf86efff756bc5e3",
+      "uploaded": true
+    },
+    {
+      "index": 18,
+      "path": "public/nearby/casa-ricaurte.webp",
+      "bytes": 124150,
+      "gitBlobSHA": "e9f11c247aa7ee08e255884ed6192d4df8c2c072",
+      "uploaded": true
+    },
+    {
+      "index": 19,
+      "path": "public/nearby/casa-terracota.webp",
+      "bytes": 125782,
+      "gitBlobSHA": "12a84137dcf64d6e890d67ac904e67de80456a2e",
+      "uploaded": true
+    },
+    {
+      "index": 20,
+      "path": "public/nearby/catedral-tunja.webp",
+      "bytes": 71780,
+      "gitBlobSHA": "3420579f4581172083f18816ed08c901d7bcbb2a",
+      "uploaded": true
+    },
+    {
+      "index": 21,
+      "path": "public/nearby/chiquiza.webp",
+      "bytes": 30716,
+      "gitBlobSHA": "c8fb2f420d456133d1e4f929ac430cd58255ed42",
+      "uploaded": true
+    },
+    {
+      "index": 22,
+      "path": "public/nearby/convento-ecce-homo.webp",
+      "bytes": 63550,
+      "gitBlobSHA": "2648b448fa97f3c5a4006e4251fe0559d067912d",
+      "uploaded": false
+    },
+    {
+      "index": 23,
+      "path": "public/nearby/gondava.webp",
+      "bytes": 209174,
+      "gitBlobSHA": "9f6bd26238c1fcc5e76442d5c2682a10bb0fef46",
+      "uploaded": false
+    },
+    {
+      "index": 24,
+      "path": "public/nearby/iglesia-carmen.webp",
+      "bytes": 57236,
+      "gitBlobSHA": "c0695fd92286caa39a897d1c7dbf0873523f44be",
+      "uploaded": false
+    },
+    {
+      "index": 25,
+      "path": "public/nearby/iguaque.webp",
+      "bytes": 81954,
+      "gitBlobSHA": "1821b15c45df52699f5fd9e6211a924df2e6cdab",
+      "uploaded": false
+    },
+    {
+      "index": 26,
+      "path": "public/nearby/infiernito.webp",
+      "bytes": 68362,
+      "gitBlobSHA": "531bf67a6c5d5d23d92b6df330c0389ca1399aaf",
+      "uploaded": false
+    },
+    {
+      "index": 27,
+      "path": "public/nearby/museo-acuna.webp",
+      "bytes": 96254,
+      "gitBlobSHA": "d3797ed56c92519daf042e7dbb0c90a3e09d27a0",
+      "uploaded": false
+    },
+    {
+      "index": 28,
+      "path": "public/nearby/museo-carmen.webp",
+      "bytes": 53336,
+      "gitBlobSHA": "e469fae6f542296e6d2d67960339a66922a942c5",
+      "uploaded": false
+    },
+    {
+      "index": 29,
+      "path": "public/nearby/museo-fosil.webp",
+      "bytes": 61978,
+      "gitBlobSHA": "34825b10ba62279afdb6d2138488cf0b65f45c9f",
+      "uploaded": false
+    },
+    {
+      "index": 30,
+      "path": "public/nearby/museo-paleontologico.webp",
+      "bytes": 159246,
+      "gitBlobSHA": "d24afb978863815a9a75f8b18a7c3d3c0aa106e7",
+      "uploaded": false
+    },
+    {
+      "index": 31,
+      "path": "public/nearby/parroquia-rosario.webp",
+      "bytes": 144510,
+      "gitBlobSHA": "e9c1609bf253760cbb0f47e60d64f448461fbb0f",
+      "uploaded": false
+    },
+    {
+      "index": 32,
+      "path": "public/nearby/periquera.webp",
+      "bytes": 126084,
+      "gitBlobSHA": "349679eacad9402c43ebee957fb536ce78ba54c2",
+      "uploaded": false
+    },
+    {
+      "index": 33,
+      "path": "public/nearby/plaza-bolivar-tunja.webp",
+      "bytes": 72786,
+      "gitBlobSHA": "54e4eb3d6abd55ec95a583f281d830e7ac23a996",
+      "uploaded": false
+    },
+    {
+      "index": 34,
+      "path": "public/nearby/plaza-mayor.webp",
+      "bytes": 137840,
+      "gitBlobSHA": "f69aecff96bae42303a019f23980bd2ef8d925e2",
+      "uploaded": false
+    },
+    {
+      "index": 35,
+      "path": "public/nearby/puente-boyaca.webp",
+      "bytes": 79366,
+      "gitBlobSHA": "d27e12aa12debf51acbb0d01b1e3d14259224e74",
+      "uploaded": false
+    },
+    {
+      "index": 36,
+      "path": "public/nearby/raquira.webp",
+      "bytes": 133378,
+      "gitBlobSHA": "58db9a534917afa0a4a5c31a13a2d2c46ce5148b",
+      "uploaded": false
+    },
+    {
+      "index": 37,
+      "path": "public/nearby/sachica.webp",
+      "bytes": 63220,
+      "gitBlobSHA": "a78beb90cc88976d0bbe226593c056bf0c80f15d",
+      "uploaded": false
+    },
+    {
+      "index": 38,
+      "path": "public/nearby/san-agustin.webp",
+      "bytes": 76268,
+      "gitBlobSHA": "63cbccfa1f12a8a656f95a8c522dc410e8a2ad03",
+      "uploaded": false
+    },
+    {
+      "index": 39,
+      "path": "public/nearby/san-francisco-tunja.webp",
+      "bytes": 19912,
+      "gitBlobSHA": "0f8b79cebc7e023658d0c3253a26eeaaf848bc1f",
+      "uploaded": false
+    },
+    {
+      "index": 40,
+      "path": "public/nearby/san-francisco.webp",
+      "bytes": 36144,
+      "gitBlobSHA": "2d64b8f785f635f631a381d1611af46bb8fc6a88",
+      "uploaded": false
+    },
+    {
+      "index": 41,
+      "path": "public/nearby/santo-domingo.webp",
+      "bytes": 43130,
+      "gitBlobSHA": "f9ff7937f5e8f86434379ccbd9aeecec642b74e0",
+      "uploaded": false
+    },
+    {
+      "index": 42,
+      "path": "public/nearby/sutamarchan.webp",
+      "bytes": 126650,
+      "gitBlobSHA": "1a1f05f9d774fc970a274437db66d0bb1e967519",
+      "uploaded": false
+    },
+    {
+      "index": 43,
+      "path": "public/nearby/tinjaca.webp",
+      "bytes": 131006,
+      "gitBlobSHA": "e8116f3dd9636797fe73a558c7dd199acbfa7f34",
+      "uploaded": false
+    },
+    {
+      "index": 44,
+      "path": "src/app/[lang]/layout.tsx",
+      "bytes": 3412,
+      "gitBlobSHA": "f06b1e333648d26360e503c7965b15a30e3dfe1e",
+      "uploaded": false
+    },
+    {
+      "index": 45,
+      "path": "src/app/[lang]/nearby/[slug]/page.tsx",
+      "bytes": 6991,
+      "gitBlobSHA": "eb37f84e6ac0b939f70ad9ccc14c0a84b34fd5b1",
+      "uploaded": false
+    },
+    {
+      "index": 46,
+      "path": "src/app/[lang]/page.tsx",
+      "bytes": 206,
+      "gitBlobSHA": "2dc35bf2820af3792406b2e30a4fac32b09c49c9",
+      "uploaded": false
+    },
+    {
+      "index": 47,
+      "path": "src/app/globals.css",
+      "bytes": 33639,
+      "gitBlobSHA": "d5892717ac8755c288444ccef2ef9024c4a83f04",
+      "uploaded": false
+    },
+    {
+      "index": 48,
+      "path": "src/app/sitemap.ts",
+      "bytes": 1308,
+      "gitBlobSHA": "5d10487a4e86bef0346bb9aaa2a99ad0a0cd73a0",
+      "uploaded": false
+    },
+    {
+      "index": 49,
+      "path": "src/components/HomeContent.tsx",
+      "bytes": 18130,
+      "gitBlobSHA": "2d4d4ce2f23a659333e58eed0b7874b6e9554793",
+      "uploaded": false
+    },
+    {
+      "index": 50,
+      "path": "src/components/NearbyIndex.tsx",
+      "bytes": 485,
+      "gitBlobSHA": "8427ec32de8ec179de483691eebbc15b9b5ea617",
+      "uploaded": false
+    },
+    {
+      "index": 51,
+      "path": "src/components/SiteFrame.tsx",
+      "bytes": 3095,
+      "gitBlobSHA": "7deb7022ec7ba4755e71134812172b0b115fa6cc",
+      "uploaded": false
+    },
+    {
+      "index": 52,
+      "path": "src/data/nearby.json",
+      "bytes": 103299,
+      "gitBlobSHA": "f488d166c99871e2898598fca86be0ce8dd02cee",
+      "uploaded": false
+    },
+    {
+      "index": 53,
+      "path": "src/data/nearbyLabels.ts",
+      "bytes": 105,
+      "gitBlobSHA": "450cd7544dc29e40d75c02ec4ecda71891a7e343",
+      "uploaded": false
+    },
+    {
+      "index": 54,
+      "path": "src/data/visitText.ts",
+      "bytes": 10312,
+      "gitBlobSHA": "a4082bc4ebaeda2a20875905e538c5cbe2df0745",
+      "uploaded": false
+    }
+  ],
+  "imageSources": {
+    "plaza-mayor": [
+      "https://www.tour-edition.de/media/images/country/153/xl_Kolumbien_Villa%20de%20Leyva_Plaza%20Mayor_as_tour_222125659_ie.jpeg",
+      "https://www.semana.com/resizer/v2/QFKWWDLKHZCZRDVAU2OXL562BM.jpg?auth=2beaf72b6679e48787b8621a639d315c19e46f0724a7bba371c5dd24842e5ac1"
+    ],
+    "parroquia-rosario": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Iglesia_de_Nuestra_Se%C3%B1ora_del_Rosario%2C_Villa_de_Leyva_03.jpg/1280px-Iglesia_de_Nuestra_Se%C3%B1ora_del_Rosario%2C_Villa_de_Leyva_03.jpg"
+    ],
+    "casa-narino": [
+      "https://f.civitatis.com/colombia/villa-de-leyva/galeria/antonio-narino-tour.jpg",
+      "https://www.pueblospatrimonio.com.co/images/atractivos/17/casa-museo-antonio-narino-1.jpg",
+      "https://1.bp.blogspot.com/-p1NMSQB0870/YE1-Of8-zlI/AAAAAAABvuo/vYklXR06P5c14wDiCQvkr5HqSTUIZMhLgCLcBGAsYHQ/s16000/Antonio%2BNari%25C3%25B1o%2BMuseum%2B-%2BVilla%2Bde%2BLeyva%2B-%2Bufm.jpg",
+      "https://cdns3.museumspedia.net/media/items/originals/17166-Casa-Museo-Antonio-Narino-4mfsk.jpg"
+    ],
+    "casa-ricaurte": [
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/12/7e/50/f6/fachada.jpg?h=1200&s=1&w=1200",
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/43/17/00/casa-museo-capitan-antonio.jpg?h=1200&s=1&w=1200",
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/58/45/83/jardin.jpg?h=1200&s=1&w=1200"
+    ],
+    "museo-acuna": [
+      "https://d3fphkxyf5o5bm.cloudfront.net/image-resize/format%3Dwebp%2Cw%3D720/QwRY54Li1HMwD7oNfpMEbSnXUfEEKxNdyzICllY1ix",
+      "https://radionacional-v3.s3.amazonaws.com/s3fs-public/styles/portadas_relaciona_4_3/public/senalradio/articulo-noticia/galeriaimagen/museo2.jpg?h=06ac0d8c&itok=raQdc610",
+      "https://dimg04.c-ctrip.com/images/02Y0g12000a89v4fqAD96_R_1080_808_Q90.jpg",
+      "https://goboy.com.co/wp-content/uploads/2022/09/Museo-acuna-.-1-1200x800.jpg"
+    ],
+    "iglesia-carmen": [
+      "https://colombia.travel/sites/default/files/Iglesia%20de%20Nuestra%20Sen%CC%83ora%20del%20Carmen%20Villa%20de%20Leyva%20Colombia%20%E2%80%93%209.jpg"
+    ],
+    "museo-carmen": [
+      "https://igoa-adventure.com/wp-content/uploads/2022/07/Museo-del-Carmen-in-Villa-de-Leyva-Colombia-900x655.jpg",
+      "https://ocdcolombia.org/wp-content/uploads/2016/08/IMG_0247.jpg",
+      "https://ocdcolombia.org/wp-content/uploads/2016/08/IMG_0255.jpg",
+      "https://colombia.travel/sites/default/files/Iglesia%20de%20Nuestra%20Sen%CC%83ora%20del%20Carmen%20Villa%20de%20Leyva%20Colombia%20%E2%80%93%209.jpg"
+    ],
+    "san-agustin": [
+      "https://www.semana.com/resizer/v2/PB6AGVB6I5EKPANRKU53D6SG4E.jpg?auth=ba4b918a142bff36f74b9245428018189d506ecf4518e4e09cbcc5e12a4e9969"
+    ],
+    "san-francisco": [
+      "https://colombia.travel/sites/default/files/Convento%20San%20Francisco%20Villa%20de%20Leyva%20Colombia%20%E2%80%93%208.jpg"
+    ],
+    "casa-terracota": [
+      "https://d2yoo3qu6vrk5d.cloudfront.net/pulzo-lite/images-resized/PP4083437-h-o.webp",
+      "https://travelislife.org/wp-content/uploads/Casa-Terracota-Aerial-Shot.jpg",
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/ea/6b/a2/img-20200214-wa0044-largejpg.jpg?h=-1&s=1&w=700"
+    ],
+    "museo-fosil": [
+      "https://1.bp.blogspot.com/-HxGDutonrGQ/YFZ0JiCxnCI/AAAAAAABv-k/ZqilBv-KxU4VZZ9yF7oazAlXt4_uiNTNwCLcBGAsYHQ/s891/museo%2Bdel%2Bfosil%2B-%2BVilla%2Bde%2BLeyva%2B1.jpg",
+      "https://www.abc.com.py/resizer/v2/6J7DYUBZJVGIHM4RAHBSTHRRWY.jpg?auth=0070ef9e4d12854652f31c349f2639e0818ecdf04edb01d69ec77b283b4ff126&smart=true&width=770",
+      "https://colombia.travel/sites/default/files/Museo%20Paleontolo%CC%81gico%20Villa%20de%20Leyva%20Colombia%20%E2%80%93%2010.jpg"
+    ],
+    "museo-paleontologico": [
+      "https://cdns3.museumspedia.net/media/items/originals/17837-Museo-Paleontologico-de-Villa-de-Leyva-ZG68k.jpg",
+      "https://colombia.travel/sites/default/files/Museo%20Paleontolo%CC%81gico%20Villa%20de%20Leyva%20Colombia%20%E2%80%93%2010.jpg",
+      "https://www.abc.com.py/resizer/v2/6J7DYUBZJVGIHM4RAHBSTHRRWY.jpg?auth=0070ef9e4d12854652f31c349f2639e0818ecdf04edb01d69ec77b283b4ff126&smart=true&width=770"
+    ],
+    "infiernito": [],
+    "convento-ecce-homo": [
+      "https://hospedajelatierrita.com/blog/wp-content/uploads/2024/04/Monasterio-Santo-Ecce-Homo.png",
+      "https://colparques.net/images/ecce/1.jpg"
+    ],
+    "gondava": [
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/89/06/01/super-recomendado-para.jpg?h=1200&s=1&w=1200",
+      "https://www.tangol.com/Fotos/Tours/tour-al-parque-gondava-y-granja-de-las-avestruces_7971_202605111403080.JPEG",
+      "https://es-academic.com/pictures/eswiki/71/Gondava_triceratops.JPG"
+    ],
+    "periquera": [
+      "https://villadeleyvaextrema.com/wp-content/uploads/2021/06/plan-periquera-aventura-park-6.jpg"
+    ],
+    "iguaque": [
+      "https://www.parquesnacionales.gov.co/wp-content/uploads/2024/08/4.-SFF-Iguaque-Autor-William-Yesid-Bello-scaled.jpg",
+      "https://caracol.com.co/resizer/v2/RNV6YJE4SFDERESQDDNVIKPLKI.jpg?auth=6d8bd200156f287a268ef573598ac47bb6f82fcd923432b9c9caa6296a63669e&height=552&quality=70&smart=true&width=736",
+      "https://ecoglobalexpeditions.com/wp-content/uploads/2017/02/paginavilladeleyvaiguaque.jpg"
+    ],
+    "sachica": [
+      "https://cloudfront-us-east-1.images.arcpublishing.com/semana/XNUOQJNHI5F2RABFUNW3T5GGIY.jpg",
+      "https://cdn.colombia.com/sdi/2021/11/05/sachica-boyaca-la-tierra-de-la-cebolla-y-la-cerveza-mucha-cerveza-968469-1.jpg",
+      "https://goboy.com.co/wp-content/uploads/2023/02/img6-1200x675.jpg"
+    ],
+    "raquira": [
+      "https://d2yoo3qu6vrk5d.cloudfront.net/images/20240513111636/raquira-1024x683.jpg",
+      "https://imagescdn.citix.com.co/citix/production/media/media/a5a6b37def2a29fdeb8eded02b369023.jpg",
+      "https://st3.depositphotos.com/9813558/18675/i/450/depositphotos_186757894-stock-photo-main-square-of-raquira-seen.jpg"
+    ],
+    "candelaria": [
+      "https://amonitatravel.com/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MjYxNjc5OCwicHVyIjoiYmxvYl9pZCJ9fQ%3D%3D--ec899ce37f892c193658148815b5d8a56dd4df74/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJ3ZWJwIiwicmVzaXplX3RvX2ZpdCI6WzgwMCw4MDBdfSwicHVyIjoidmFyaWF0aW9uIn19--bd5a2de8e0d11957373f04c83dd708213bfe6ce6/Monas%20Cande%204.jpg?locale=es",
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/09/64/5c/26/monasterio-de-la-candelaria.jpg?h=1200&s=1&w=1200"
+    ],
+    "sutamarchan": [
+      "https://media.viajando.travel/p/dc961978e4c6b4ed2bb12ee3ad767b41/adjuntos/236/imagenes/000/500/0000500064/1200x0/smart/sutamarchan-boyaca.jpg",
+      "https://i.pinimg.com/originals/94/8a/7d/948a7d3083e80e5dc16a2103391175f4.jpg",
+      "https://d2yoo3qu6vrk5d.cloudfront.net/images/20240920140256/shutterstock_2450810979-1024x768.jpg",
+      "https://www.boyacaradio.com/imagenes/fotos_noticias/5-1-1080x675.jpg"
+    ],
+    "tinjaca": [
+      "https://nomadicniko.com/wp-content/uploads/2018/03/IMG_6769-1.jpeg",
+      "https://goboy.com.co/wp-content/uploads/2023/05/Tinjaca-2-10.jpg",
+      "https://www.semana.com/resizer/v2/MKNWHIW3E5CHJLXMCTIB2SZR4I.jpg?auth=7a7685802930bc7f0ee640cc6cbaee8fa7d1c837dadfc20b3ce8c1f226f16bd9&width=6000"
+    ],
+    "arcabuco": [
+      "https://nomadicniko.com/wp-content/uploads/2018/06/DSC_8541-1.jpg",
+      "https://goboy.com.co/wp-content/uploads/2023/05/Arcabuco-02.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Arcabuco_Boyaca_parque_e_iglesia.png/960px-Arcabuco_Boyaca_parque_e_iglesia.png"
+    ],
+    "chiquiza": [
+      "https://goboy.com.co/wp-content/uploads/2023/07/igu1-1200x800.jpg",
+      "https://goboy.com.co/wp-content/uploads/2023/07/igu-2-1200x800.jpg"
+    ],
+    "puente-boyaca": [
+      "https://www.vanguardia.com/resizer/v2/puente-de-boyaca-F4BBOM3JAVFXLP2IHITYS35U5E.jpg?auth=88b6c42c7973a886b66631e054aac6280c8201643010814f751e8a8e27d58797&height=800&quality=70&smart=true&width=1200",
+      "https://static.nationalgeographicla.com/files/styles/image_3200/public/53102634966_48d9a8d385_c.jpg?h=1068&w=1600"
+    ],
+    "plaza-bolivar-tunja": [
+      "https://www.semana.com/resizer/v2/NRJFYMQX6FAWZD67MGHVWIMQN4.jpg?auth=a29a0b6b52bc3c590539693aa1857efd3d33aa7c60ec958efd30bbab5a7e8333&height=1415&width=2119",
+      "https://www.asocapitales.co/sites/default/files/2026-03/img_0432.jpg",
+      "https://nomadicniko.com/wp-content/uploads/2017/06/DSC_4640.jpg"
+    ],
+    "catedral-tunja": [
+      "https://uff.travel/region/12/centro-historico-de-tunja-fuente-flickr-com-por-megavas-800x0.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/0/05/Catedral_de_Tunja.JPG",
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0e/02/bf/7d/photo0jpg.jpg?h=600&s=1&w=800"
+    ],
+    "casa-fundador": [
+      "https://www.uniboyaca.edu.co/sites/default/files/inline-images/rendon.jpg",
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/07/9d/b1/83/casa-del-fundador-gonzalo.jpg?h=1200&s=1&w=1200",
+      "https://i.pinimg.com/originals/89/5b/37/895b37982ae2026c56b03b26fdc6b55b.jpg",
+      "https://carolkiecker.wordpress.com/wp-content/uploads/2014/01/dsc00294.jpg"
+    ],
+    "casa-escribano": [
+      "https://cdns3.museumspedia.net/media/items/originals/18745-Casa-del-Escribano-Don-Juan-de-Vargas-Yt2uG.jpg",
+      "https://blog.allytrips.com/_next/image?q=75&url=https%3A%2F%2Flmlbmwpsvmecpvhfrapx.supabase.co%2Fstorage%2Fv1%2Fobject%2Fpublic%2Fallytrips-images%2Fblog%2Fuser_50001%2Fb77fb5ee9669.webp&w=3840",
+      "https://i.pinimg.com/736x/ff/d0/4d/ffd04d54c23731a019e56c2753d46329.jpg"
+    ],
+    "santo-domingo": [
+      "https://3.bp.blogspot.com/-zCNieB5nYTw/UCvDduk3a2I/AAAAAAAAAFw/FgCu3w73dks/s1600/sanfranciscotunja.jpg",
+      "https://adminpaxzu-constructora.oikos.com.co/images/website/2025/enero/13-atractivos-de-tunja.webp",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Santo_Domingo_%26_Capilla_del_Rosario_20.JPG/1280px-Santo_Domingo_%26_Capilla_del_Rosario_20.JPG"
+    ],
+    "san-francisco-tunja": [
+      "https://media-cdn.tripadvisor.com/media/photo-s/0f/08/94/ff/construida-en-1570-fue.jpg",
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0d/bc/ca/68/interior.jpg?h=1000&s=1&w=1000",
+      "https://www.andreas-osiander.net/wordpress/wp-content/uploads/2020/02/83488111_10220680999036999_9170092954662993920_n_10220680998996998.jpg",
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/09/12/67/ce/getlstd-property-photo.jpg?h=1200&s=1&w=1200"
+    ]
+  },
+  "additionalSuccessfulPhotoSources": {
+    "infiernito": "https://commons.wikimedia.org/wiki/File:Villa_de_Leyva_el_infiernito.jpg",
+    "casa-narino": "https://cdns3.museumspedia.net/media/items/originals/17166-Casa-Museo-Antonio-Narino-4mfsk.jpg",
+    "san-francisco": "https://colombia.travel/sites/default/files/Convento%20San%20Francisco%20Villa%20de%20Leyva%20Colombia%20%E2%80%93%208.jpg"
+  },
+  "note": "Image source lists include candidate URLs. Match the output WebP blob ID to confirm the exact downloaded asset. The listed local commit was not published to production."
+}
