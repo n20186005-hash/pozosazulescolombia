@@ -39,7 +39,7 @@ def check(job):
     p,l=job;route='/'+l+'/nearby/'+p['slug'];url=base+route
     try:
         d=Page(get(route));body=' '.join(' '.join(d.body).split());c=p['locales'][l]
-        checks={k:' '.join(c[k].split()) in body for k in ['name','intro','look','photo','fees','hours','stay']}
+        checks={k:' '.join(c[k].split()) in body for k in ['name','intro','look','photo','fees','hours','stay','advice','note','tag']}
         checks.update(stops=all(x in body for x in c['stops']),photo=images[p['image']] and any(t=='img' and a.get('src')==p['image'] for t,a in d.tags),footer=bool(d.footer) and d.footer==homes[l].footer,language=any(t=='html' and a.get('lang')==l for t,a in d.tags),FAQ=sum(t=='details' for t,a in d.tags)==3,table=any(t=='table' for t,a in d.tags),map=any(t=='a' and a.get('href')==p['map'] for t,a in d.tags),canonical=any(t=='link' and a.get('rel')=='canonical' and a.get('href')==url for t,a in d.tags),languages=all(any(t=='link' and a.get('hreflang')==lang and a.get('href')==base+'/'+lang+'/nearby/'+p['slug'] for t,a in d.tags) for lang in locales),sitemap=url in sitemap,directory=any(t=='a' and a.get('href')==route for t,a in homes[l].tags))
         return {'url':url,'passed':all(checks.values()),'missing':[k for k,v in checks.items() if not v]}
     except Exception as e:return {'url':url,'passed':False,'error':str(e)}

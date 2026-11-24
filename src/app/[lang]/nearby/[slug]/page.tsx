@@ -23,23 +23,25 @@ export default async function Place({params}: {params:Params}) {
   const {lang:locale,slug}=await params;const {p,index}=resolve(locale,slug);
   const copy=p.locales[locale], tr=labels[locale], related=places[pairs[index]], relatedText=related.locales[locale];
   const relatedURL=`/${locale}/nearby/${related.slug}`;
+  const heads = {en:["Explore","Visit advice","What makes it distinctive","Discover the place","Visitor notes","By road and on foot"],es:["Explora","Consejos de visita","Rasgos del lugar","Descubre el patrimonio","Indicaciones para la visita","Llegada y recorrido a pie"],zh:["探索与引言","游览建议","景区特色","发现魅力","游览须知","交通方式"]}[locale];
   return <LangProvider initialLocale={locale}><Nav/><main className="place-guide">
     <header className="hero"><div className="hero-bg" style={{backgroundImage:`url("${p.image}")`}}/><div className="hero-texture"/><div className="hero-content">
       <a className="hero-tagline" href={`/${locale}#nearby`}>{tr.near}</a><h1 className="hero-title">{copy.name}</h1>
-      <p className="hero-subtitle">{copy.intro}</p><a className="hero-cta" href={p.map}>{tr.map}</a>
+      <p className="hero-subtitle">{copy.tag}</p><a className="hero-cta" href={p.map}>{tr.map}</a>
       <p className="guide-hero-links"><a href="#hours">{tr.hours}</a> · <a href={p.map}>{tr.rating}</a></p>
     </div></header>
-    <section className="section"><h2 className="section-title">{tr.gallery}</h2><p>{copy.look}</p></section>
-    <section className="section"><h2 className="section-title">{tr.practical}</h2><table><tbody>
+    <section className="section"><h2 className="section-title">{heads[0]}</h2><p>{copy.intro}</p><h3>{heads[1]}</h3><p>{copy.advice}</p><h3>{heads[2]}</h3><p>{copy.tag}</p></section>
+    <section className="section"><h2 className="section-title">{tr.about}</h2><p>{tr.contact} · {p.operator}</p><h3>{tr.practical}</h3><table><tbody>
       {[[tr.about,copy.name],[tr.address,p.address],[tr.contact,p.operator],[tr.route,copy.stops.join(" → ")]].map(([key,value])=><tr key={key}><th scope="row">{key}</th><td>{value}</td></tr>)}
     </tbody></table><h3 id="hours">{tr.hours}</h3><p>{copy.hours}</p><h3>{tr.fees}</h3><p>{copy.fees}</p></section>
-    <section className="section"><h2 className="section-title">{tr.walk}</h2><ol>{copy.stops.map((stop,i)=><li key={stop}><strong>{[tr.first,tr.main,tr.return][i]}</strong> · {stop}</li>)}</ol></section>
+    <section className="section"><h2 className="section-title">{heads[5]}</h2><p>{p.address} · <a href={p.map}>{tr.map}</a></p><p>{copy.stops[0]}</p><h3>{heads[3]}</h3><p>{copy.look}</p></section>
+    <section className="section"><h2 className="section-title">{tr.walk}</h2><ol>{copy.stops.map((stop,i)=><li key={stop}><strong>{[tr.first,tr.main,tr.return][i]}</strong> · {stop}</li>)}</ol><h3>{heads[4]}</h3><p>{copy.note}</p></section>
     <section className="section"><h2 className="section-title">{tr.photo}</h2><figure><img loading="lazy" src={p.image} alt={copy.name}/><figcaption>{copy.name} · <a href={p.photoSource}>{tr.credit}</a></figcaption></figure><p>{copy.photo}</p>
       <h3>{tr.stay}</h3><p>{copy.stay}</p></section>
     <section className="section"><h2 className="section-title">{tr.reviews}</h2><p>{tr.re} <a href={p.map}>{tr.rating}</a></p></section>
     <section className="section"><h2 className="section-title">{tr.faqs}</h2>
       <details open><summary>{tr.q1}</summary><p>{copy.stops[0]} → {copy.stops[1]}. {p.address} · <a href={p.map}>{tr.map}</a></p></details>
-      <details open><summary>{tr.q2}</summary><p>{copy.look}</p></details>
+      <details open><summary>{tr.q2}</summary><p>{copy.tag}. {copy.photo}</p></details>
       <details open><summary>{tr.q3}</summary><p><a href={relatedURL}>{relatedText.name}</a>. {tr.next}</p></details>
     </section><section className="section"><h2 className="section-title">{tr.directions}</h2><p>{p.address}</p><a href={p.map}>{tr.map}</a> · <a href={p.source}>{tr.source}</a><h3>{tr.other}</h3><a href={relatedURL}>{relatedText.name}</a></section>
   </main><Footer/></LangProvider>;
