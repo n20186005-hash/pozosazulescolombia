@@ -1,0 +1,25 @@
+name: Recover identified Boyacá guide photographs
+on:
+  push:
+    branches: ['verify/140-recover-images-20261124']
+permissions:
+  contents: read
+jobs:
+  fetch-selected-media:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - run: python3 -m pip install --quiet Pillow
+      - name: Collect image set 1
+        run: python3 .github/collect-media-140.py 0
+      - name: Collect image set 2
+        run: python3 .github/collect-media-140.py 1
+      - name: Collect image set 3
+        run: python3 .github/collect-media-140.py 2
+      - name: Collect image set 4
+        run: python3 .github/collect-media-140.py 3
+      - name: Collect image set 5
+        run: python3 .github/collect-media-140.py 4
