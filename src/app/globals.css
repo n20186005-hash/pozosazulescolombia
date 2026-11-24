@@ -1134,3 +1134,18 @@ body {
     padding: 1.25rem;
   }
 }
+
+.place-guide .hero-title {font-size:clamp(2.8rem,8vw,7rem)}
+.place-guide .section {padding-block:3rem}
+.place-guide .section + .section {border-top:1px solid #c7d7db}
+.place-guide h3 {font:600 1.45rem var(--font-display);margin:1.6rem 0 .5rem}
+.place-guide p,.place-guide li,.place-guide td {line-height:1.75}
+.place-guide .section a,.nearby-index a {text-decoration:underline;text-underline-offset:.2em}
+.guide-hero-links {margin-top:1rem;color:white}
+.place-guide table {border-collapse:collapse;width:100%;text-align:start}
+.place-guide td,.place-guide th {padding:.6rem .7rem;border-bottom:1px solid #c7d7db;vertical-align:top;text-align:start}
+.place-guide ol {padding-inline-start:1.5rem;list-style:decimal}
+.place-guide summary {cursor:pointer;font-weight:600}
+.place-guide details {padding:.8rem 0}
+.place-guide figure img {max-width:100%;height:auto;max-height:26rem}
+.nearby-index li {padding:.5rem}

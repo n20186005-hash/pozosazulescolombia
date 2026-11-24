@@ -1,0 +1,14 @@
+import data from "./places.json";
+import type { Locale } from "@/i18n/translations";
+
+export const places = data;
+export const locales: Locale[] = ["es","en","zh"];
+export const domain = "https://www.pozosazulescolombia.com";
+export function alternatives(path: string) {
+  return {languages: Object.fromEntries([...locales.map(l => [l, domain + "/" + l + path]), ["x-default", domain + "/en" + path]])};
+}
+export const labels = {
+  en: {near:"Explore Boyacá",walk:"Walking route",gallery:"What to look for",practical:"Visitor information",about:"About this place",contact:"Visitor enquiries",hours:"Opening times",fees:"Tickets and entry",address:"Arrival point",route:"Route",before:"Before you go",photo:"Photography",stay:"Where to stay",reviews:"Visitor reviews",rating:"Read current ratings",map:"Open location map",directions:"Getting there",faqs:"Questions about visiting",source:"Place information",credit:"Photograph",other:"Pair this visit with",q1:"Where should I start?",q2:"What makes this a worthwhile stop?",q3:"Which nearby stop pairs well with this visit?",re:"Read the latest dated comments on this place’s map listing. When comparing experiences, check whether the writer visited the interior or only the public approach.",next:"Separate the two visits if the second venue requires a timed ticket.",detail:"Boyacá travel guide",first:"Find the entrance",main:"On site",return:"Last stop"},
+  es: {near:"Explorar Boyacá",walk:"Ruta a pie",gallery:"Qué observar",practical:"Datos básicos",about:"Acerca del lugar",contact:"Consulta de acceso",hours:"Horario",fees:"Entradas y precios",address:"Punto de llegada",route:"Recorrido",before:"Antes de ir",photo:"Fotografía",stay:"Dónde alojarse",reviews:"Opiniones de visitantes",rating:"Consultar valoraciones actuales",map:"Abrir ubicación en el mapa",directions:"Cómo llegar",faqs:"Preguntas sobre la visita",source:"Información del lugar",credit:"Fotografía",other:"Combina la visita con",q1:"¿Dónde empiezo?",q2:"¿Qué merece una parada?",q3:"¿Cómo continúo después?",re:"Lee comentarios recientes y fechados en la ficha de este lugar. Distingue la experiencia de quienes entraron al recinto de la de quienes solo recorrieron el exterior.",next:"Separa los horarios si el segundo recinto requiere una entrada con hora.",detail:"Guía de Boyacá",first:"Llegada",main:"En el lugar",return:"Última parada"},
+  zh: {near:"探索博亚卡",walk:"编号步行游线",gallery:"现场看点",practical:"基本信息",about:"关于景点",contact:"参观咨询",hours:"开放时间",fees:"门票与入场",address:"抵达位置",route:"步行顺序",before:"游览须知",photo:"拍照机位",stay:"住宿建议",reviews:"游客评价",rating:"查看目前评分",map:"打开地点地图",directions:"交通指南",faqs:"常见问题",source:"景点资料",credit:"实景图片",other:"可搭配游览",q1:"从哪里开始走？",q2:"这里值得专门看什么？",q3:"下一站可去哪里？",re:"在本景点的地图条目中查看近期带日期的评论。比较体验时，留意评论者是进入场馆参观，还是仅走过公共外围。",next:"如果第二处场馆实行分时入场，请分开安排两个地点的参观时间。",detail:"博亚卡旅行指南",first:"抵达",main:"现场",return:"最后一站"}
+};

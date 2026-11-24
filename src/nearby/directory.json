@@ -1,0 +1,250 @@
+[
+  {
+    "slug": "plaza-mayor",
+    "names": {
+      "en": "Town square",
+      "es": "Plaza Mayor de Villa de Leyva",
+      "zh": "莱瓦镇主广场"
+    }
+  },
+  {
+    "slug": "parroquia-rosario",
+    "names": {
+      "en": "Rosary parish church",
+      "es": "Iglesia de Nuestra Señora del Rosario",
+      "zh": "玫瑰圣母堂"
+    }
+  },
+  {
+    "slug": "casa-narino",
+    "names": {
+      "en": "Antonio Nariño house museum",
+      "es": "Casa Museo Antonio Nariño",
+      "zh": "安东尼奥·纳里尼奥故居"
+    }
+  },
+  {
+    "slug": "casa-ricaurte",
+    "names": {
+      "en": "Antonio Ricaurte house museum",
+      "es": "Casa Museo Capitán Antonio Ricaurte",
+      "zh": "安东尼奥·里考尔特纪念馆"
+    }
+  },
+  {
+    "slug": "museo-acuna",
+    "names": {
+      "en": "Luis Alberto Acuña museum",
+      "es": "Museo Luis Alberto Acuña",
+      "zh": "路易斯·阿尔韦托·阿库尼亚博物馆"
+    }
+  },
+  {
+    "slug": "iglesia-carmen",
+    "names": {
+      "en": "Church of Our Lady of Mount Carmel",
+      "es": "Iglesia de Nuestra Señora del Carmen",
+      "zh": "卡门圣母堂"
+    }
+  },
+  {
+    "slug": "museo-carmen",
+    "names": {
+      "en": "Carmen museum",
+      "es": "Museo del Carmen",
+      "zh": "卡门宗教艺术博物馆"
+    }
+  },
+  {
+    "slug": "san-agustin",
+    "names": {
+      "en": "San Agustín cloister",
+      "es": "Claustro de San Agustín",
+      "zh": "圣奥古斯丁回廊"
+    }
+  },
+  {
+    "slug": "san-francisco",
+    "names": {
+      "en": "Former San Francisco convent",
+      "es": "Antiguo convento de San Francisco",
+      "zh": "前圣方济各修院"
+    }
+  },
+  {
+    "slug": "casa-terracota",
+    "names": {
+      "en": "Casa Terracota",
+      "es": "Casa Terracota",
+      "zh": "陶土之家"
+    }
+  },
+  {
+    "slug": "museo-fosil",
+    "names": {
+      "en": "El Fósil community museum",
+      "es": "Museo Comunitario El Fósil",
+      "zh": "化石社区博物馆"
+    }
+  },
+  {
+    "slug": "museo-paleontologico",
+    "names": {
+      "en": "Villa de Leyva palaeontology museum",
+      "es": "Museo Paleontológico de Villa de Leyva",
+      "zh": "莱瓦镇古生物博物馆"
+    }
+  },
+  {
+    "slug": "infiernito",
+    "names": {
+      "en": "Monquirá archaeological park",
+      "es": "Parque Arqueológico de Monquirá – El Infiernito",
+      "zh": "蒙基拉考古公园"
+    }
+  },
+  {
+    "slug": "convento-ecce-homo",
+    "names": {
+      "en": "Santo Ecce Homo convent",
+      "es": "Convento Santo Ecce Homo",
+      "zh": "圣埃切奥莫修院"
+    }
+  },
+  {
+    "slug": "gondava",
+    "names": {
+      "en": "Gondava dinosaur park",
+      "es": "Gondava, el Gran Valle de los Dinosaurios",
+      "zh": "贡达瓦恐龙谷"
+    }
+  },
+  {
+    "slug": "periquera",
+    "names": {
+      "en": "La Periquera waterfalls",
+      "es": "Cascadas de La Periquera",
+      "zh": "拉佩里克拉瀑布"
+    }
+  },
+  {
+    "slug": "iguaque",
+    "names": {
+      "en": "Iguaque wildlife sanctuary",
+      "es": "Santuario de Fauna y Flora Iguaque",
+      "zh": "伊瓜克动植物保护区"
+    }
+  },
+  {
+    "slug": "sachica",
+    "names": {
+      "en": "Sáchica main square",
+      "es": "Plaza principal de Sáchica",
+      "zh": "萨奇卡中心广场"
+    }
+  },
+  {
+    "slug": "raquira",
+    "names": {
+      "en": "Ráquira main square",
+      "es": "Plaza principal de Ráquira",
+      "zh": "拉基拉陶艺小镇广场"
+    }
+  },
+  {
+    "slug": "candelaria",
+    "names": {
+      "en": "La Candelaria monastery",
+      "es": "Monasterio de La Candelaria",
+      "zh": "坎德拉里亚修道院"
+    }
+  },
+  {
+    "slug": "sutamarchan",
+    "names": {
+      "en": "Sutamarchán main park",
+      "es": "Parque principal de Sutamarchán",
+      "zh": "苏塔马尔昌中心公园"
+    }
+  },
+  {
+    "slug": "tinjaca",
+    "names": {
+      "en": "Tinjacá town park",
+      "es": "Parque principal de Tinjacá",
+      "zh": "廷哈卡中心广场"
+    }
+  },
+  {
+    "slug": "arcabuco",
+    "names": {
+      "en": "Arcabuco town park",
+      "es": "Parque principal de Arcabuco",
+      "zh": "阿尔卡武科中心广场"
+    }
+  },
+  {
+    "slug": "chiquiza",
+    "names": {
+      "en": "Chíquiza historic town centre",
+      "es": "Centro histórico de Chíquiza",
+      "zh": "奇基萨老镇中心"
+    }
+  },
+  {
+    "slug": "puente-boyaca",
+    "names": {
+      "en": "Boyacá battlefield and bridge",
+      "es": "Campo de Boyacá y Puente de Boyacá",
+      "zh": "博亚卡战场与纪念桥"
+    }
+  },
+  {
+    "slug": "plaza-bolivar-tunja",
+    "names": {
+      "en": "Tunja Bolívar Square",
+      "es": "Plaza de Bolívar de Tunja",
+      "zh": "通哈玻利瓦尔广场"
+    }
+  },
+  {
+    "slug": "catedral-tunja",
+    "names": {
+      "en": "Santiago Cathedral of Tunja",
+      "es": "Catedral Basílica Metropolitana Santiago de Tunja",
+      "zh": "通哈圣地亚哥主教座堂"
+    }
+  },
+  {
+    "slug": "casa-fundador",
+    "names": {
+      "en": "Founder’s house museum",
+      "es": "Casa del Fundador Gonzalo Suárez Rendón",
+      "zh": "通哈建城者故居"
+    }
+  },
+  {
+    "slug": "casa-escribano",
+    "names": {
+      "en": "House museum of Juan de Vargas",
+      "es": "Casa Museo Don Juan de Vargas",
+      "zh": "通哈书记官故居"
+    }
+  },
+  {
+    "slug": "santo-domingo",
+    "names": {
+      "en": "Santo Domingo church in Tunja",
+      "es": "Iglesia de Santo Domingo de Tunja",
+      "zh": "通哈圣多明各堂"
+    }
+  },
+  {
+    "slug": "san-francisco-tunja",
+    "names": {
+      "en": "San Francisco church in Tunja",
+      "es": "Iglesia de San Francisco de Tunja",
+      "zh": "通哈圣方济各堂"
+    }
+  }
+]
