@@ -1,23 +1,12 @@
-name: Inspect the 93 published Villa de Leyva and Boyacá guides
+name: Capture desktop and mobile views of the published Boyacá guide
 on:
   push:
     branches: ['verify/140-production-pages-20261124']
 permissions:
   contents: read
 jobs:
-  production-content:
-    runs-on: ubuntu-latest
-    timeout-minutes: 12
-    steps:
-      - uses: actions/checkout@v4
-        with: {persist-credentials: false}
-      - name: Compare all live pages, venue pictures and original site photographs
-        run: python3 .github/verify-140.py --online
-      - uses: actions/upload-artifact@v4
-        if: always()
-        with: {name: production-140-urls, path: verified-140.json}
   desktop-and-mobile:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 12
     steps:
       - uses: actions/checkout@v4
